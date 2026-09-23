@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Logo Design — Mohammad Aminzadeh</title>
+
+    <meta
+      name="description"
+      content="Selected logo design projects by Mohammad Aminzadeh."
+    />
+
+    <link
+      rel="canonical"
+      href="https://mohammadaminzaadeh.github.io/logos.html"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Logo Design — Mohammad Aminzadeh" />
+
+    <meta
+      property="og:description"
+      content="Selected logo design projects by Mohammad Aminzadeh."
+    />
+
+    <meta
+      property="og:url"
+      content="https://mohammadaminzaadeh.github.io/logos.html"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* =========================
+       ROOT
+    ========================= */
+
+      :root {
+        --black: #0d0d0d;
+        --gold: #d4af37;
+        --white: #f7f7f4;
+        --text: #d5d5d0;
+        --muted: #9a9a95;
+        --line: rgba(247, 247, 244, 0.12);
+        --max-width: 1180px;
+        --en: "Playfair Display", Georgia, serif;
+        --fa: "Arad", Arial, sans-serif;
+      }
+
+      /* =========================
+       RESET
+    ========================= */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: var(--black);
+        color: var(--white);
+        font-family: var(--en);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+      }
+
+      /* =========================
+       LOCAL FONT
+    ========================= */
+
+      @font-face {
+        font-family: "Playfair Display";
+        src: url("PlayfairDisplay-SemiBold.ttf") format("ttf");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* =========================
+       HEADER
+    ========================= */
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+        background: rgba(13, 13, 13, 0.88);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav {
+        width: min(var(--max-width), calc(100% - 48px));
+        margin: 0 auto;
+
+        height: 82px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .brand {
+        font-family: "Playfair Display", serif;
+        font-size: 20px;
+        letter-spacing: 0.02em;
+      }
+
+      .brand span {
+        color: var(--gold);
+      }
+
+      .back-home {
+        font-size: 13px;
+        color: var(--muted);
+        transition: color 0.3s ease;
+      }
+
+      .back-home:hover {
+        color: var(--gold);
+      }
+
+      /* =========================
+       MAIN
+    ========================= */
+
+      main {
+        width: min(var(--max-width), calc(100% - 48px));
+        margin: 0 auto;
+      }
+
+      /* =========================
+       HERO
+    ========================= */
+
+      .hero {
+        min-height: 62vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 100px 0 90px;
+
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow {
+        color: var(--gold);
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+
+        margin-bottom: 24px;
+      }
+
+      .hero h1 {
+        max-width: 900px;
+
+        font-family: "Playfair Display", serif;
+        font-size: clamp(58px, 9vw, 118px);
+        font-weight: 400;
+        line-height: 0.95;
+        letter-spacing: -0.045em;
+      }
+
+      .hero h1 span {
+        color: var(--gold);
+      }
+
+      .hero-description {
+        max-width: 620px;
+
+        margin-top: 34px;
+
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.9;
+      }
+
+      /* =========================
+       PROJECTS
+    ========================= */
+
+      .projects {
+        padding: 110px 0 120px;
+      }
+
+      .section-heading {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+        margin-bottom: 48px;
+      }
+
+      .section-heading h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 38px;
+        font-weight: 400;
+      }
+
+      .section-number {
+        color: var(--muted);
+        font-size: 12px;
+        letter-spacing: 0.12em;
+      }
+
+      /* =========================
+       PROJECT GRID
+    ========================= */
+
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+      }
+
+      .project-card {
+        display: block;
+
+        border: 1px solid var(--line);
+        background: #111111;
+
+        overflow: hidden;
+
+        transition:
+          transform 0.4s ease,
+          border-color 0.4s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-6px);
+        border-color: rgba(212, 175, 55, 0.5);
+      }
+
+      /* =========================
+       PROJECT IMAGE
+    ========================= */
+
+      .project-image {
+        aspect-ratio: 16 / 10;
+        overflow: hidden;
+        background: #161616;
+      }
+
+      .project-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* =========================
+       PROJECT INFO
+    ========================= */
+
+      .project-info {
+        padding: 26px 28px 30px;
+      }
+
+      .project-category {
+        color: var(--gold);
+
+        font-size: 11px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+
+        margin-bottom: 10px;
+      }
+
+      .project-info h3 {
+        font-family: "Playfair Display", serif;
+
+        font-size: 30px;
+        font-weight: 400;
+
+        margin-bottom: 10px;
+      }
+
+      .project-info p {
+        max-width: 500px;
+
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      .view-project {
+        display: inline-block;
+
+        margin-top: 22px;
+
+        color: var(--white);
+        font-size: 12px;
+        letter-spacing: 0.08em;
+
+        transition: color 0.3s ease;
+      }
+
+      .project-card:hover .view-project {
+        color: var(--gold);
+      }
+
+      /* =========================
+       FOOTER NAVIGATION
+    ========================= */
+
+      .bottom-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 34px 0;
+
+        border-top: 1px solid var(--line);
+      }
+
+      .bottom-navigation a {
+        color: var(--muted);
+        font-size: 13px;
+
+        transition: color 0.3s ease;
+      }
+
+      .bottom-navigation a:hover {
+        color: var(--gold);
+      }
+
+      /* =========================
+       FOOTER
+    ========================= */
+
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 34px 0 42px;
+      }
+
+      .footer-inner {
+        width: min(var(--max-width), calc(100% - 48px));
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .footer-name {
+        font-family: "Playfair Display", serif;
+        font-size: 16px;
+      }
+
+      .footer-copy {
+        color: var(--muted);
+        font-size: 11px;
+      }
+
+      /* =========================
+       RESPONSIVE
+    ========================= */
+
+      @media (max-width: 750px) {
+        .nav {
+          width: min(var(--max-width), calc(100% - 32px));
+          height: 72px;
+        }
+
+        main {
+          width: min(var(--max-width), calc(100% - 32px));
+        }
+
+        .hero {
+          min-height: 60vh;
+          padding: 80px 0 70px;
+        }
+
+        .hero h1 {
+          font-size: clamp(54px, 17vw, 82px);
+        }
+
+        .hero-description {
+          font-size: 14px;
+          line-height: 1.8;
+        }
+
+        .projects {
+          padding: 80px 0 90px;
+        }
+
+        .section-heading {
+          margin-bottom: 30px;
+        }
+
+        .section-heading h2 {
+          font-size: 30px;
+        }
+
+        .project-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+
+        .project-info {
+          padding: 22px 22px 26px;
+        }
+
+        .project-info h3 {
+          font-size: 27px;
+        }
+
+        .footer-inner {
+          width: min(var(--max-width), calc(100% - 32px));
+
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- =========================
+       HEADER
+  ========================= -->
+
+    <header>
+      <nav class="nav">
+        <a href="index.html" class="brand"> Mohammad <span>Aminzadeh</span> </a>
+
+        <a href="index.html#work" class="back-home"> ← Back to Work </a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =========================
+         HERO
+    ========================= -->
+
+      <section class="hero">
+        <div class="eyebrow">Selected Work</div>
+
+        <h1>Logo Design</h1>
+
+        <p class="hero-description">
+          A selection of minimal and distinctive logo concepts created for
+          brands, digital businesses and creative directions.
+        </p>
+      </section>
+
+      <!-- =========================
+         PROJECTS
+    ========================= -->
+
+      <section class="projects">
+        <div class="section-heading">
+          <h2>Selected Projects</h2>
+
+          <div class="section-number">03 Projects</div>
+        </div>
+
+        <div class="project-grid">
+          <!-- SURIN -->
+
+          <a href="work-surin.html" class="project-card">
+            <div class="project-image">
+              <img
+                src="images/surin-hero.jpg"
+                alt="SURIN logo design"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="project-info">
+              <div class="project-category">01 · Logo Design</div>
+
+              <h3>SURIN</h3>
+
+              <p>
+                A minimal natural identity concept focused on simplicity,
+                organic forms and a refined visual character.
+              </p>
+
+              <span class="view-project"> View Case Study → </span>
+            </div>
+          </a>
+
+          <!-- NOVA -->
+
+          <a href="work-nova.html" class="project-card">
+            <div class="project-image">
+              <img
+                src="images/nova-hero.jpg"
+                alt="NOVA logo design"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="project-info">
+              <div class="project-category">02 · Logo Design</div>
+
+              <h3>NOVA</h3>
+
+              <p>
+                A contemporary technology brand concept designed around clarity,
+                simplicity and digital products.
+              </p>
+
+              <span class="view-project"> View Case Study → </span>
+            </div>
+          </a>
+
+          <!-- PAYDAR -->
+
+          <a href="work-paydar.html" class="project-card">
+            <div class="project-image">
+              <img
+                src="images/paydar-hero.jpg"
+                alt="PAYDAR logo design"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="project-info">
+              <div class="project-category">03 · Logo Design</div>
+
+              <h3>PAYDAR</h3>
+
+              <p>
+                A geometric identity concept exploring stability, structure and
+                continuity for a real estate direction.
+              </p>
+
+              <span class="view-project"> View Case Study → </span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- =========================
+         BOTTOM NAVIGATION
+    ========================= -->
+
+      <div class="bottom-navigation">
+        <a href="index.html#work"> ← Back to Work </a>
+
+        <a href="index.html"> Home → </a>
+      </div>
+    </main>
+
+    <!-- =========================
+       FOOTER
+  ========================= -->
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-name">Mohammad Aminzadeh</div>
+
+        <div class="footer-copy">© 2026 Mohammad Aminzadeh</div>
+      </div>
+    </footer>
+  </body>
+</html>
