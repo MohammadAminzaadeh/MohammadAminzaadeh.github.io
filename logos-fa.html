@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>طراحی لوگو — محمد امین‌زاده</title>
+
+    <meta
+      name="description"
+      content="مجموعه‌ای از پروژه‌های منتخب طراحی لوگو توسط محمد امین‌زاده."
+    />
+
+    <link
+      rel="canonical"
+      href="https://mohammadaminzaadeh.github.io/logos-fa.html"
+    />
+
+    <!-- Open Graph -->
+
+    <meta property="og:title" content="طراحی لوگو — محمد امین‌زاده" />
+
+    <meta
+      property="og:description"
+      content="مجموعه‌ای از پروژه‌های منتخب طراحی لوگو توسط محمد امین‌زاده."
+    />
+
+    <meta
+      property="og:url"
+      content="https://mohammadaminzaadeh.github.io/logos-fa.html"
+    />
+
+    <style>
+      /* =========================
+       ROOT
+    ========================= */
+
+      :root {
+        --black: #0d0d0d;
+        --gold: #d4af37;
+        --white: #f7f7f4;
+        --text: #d5d5d0;
+        --muted: #9a9a95;
+        --line: rgba(247, 247, 244, 0.12);
+
+        --max-width: 1180px;
+      }
+
+      /* =========================
+       RESET
+    ========================= */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: var(--black);
+        color: var(--white);
+
+        font-family: "Arad", sans-serif;
+
+        line-height: 1.8;
+
+        -webkit-font-smoothing: antialiased;
+
+        direction: rtl;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+      }
+
+      /* =========================
+       ARAD FONT
+    ========================= */
+
+      @font-face {
+        font-family: "Arad";
+        src: url("Arad-Medium.woff2") format("woff2");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* =========================
+       HEADER
+    ========================= */
+
+      header {
+        position: sticky;
+
+        top: 0;
+
+        z-index: 1000;
+
+        background: rgba(13, 13, 13, 0.88);
+
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav {
+        width: min(var(--max-width), calc(100% - 48px));
+
+        margin: 0 auto;
+
+        height: 82px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+      }
+
+      .brand {
+        font-family: "Arad", sans-serif;
+
+        font-size: 20px;
+
+        font-weight: 500;
+
+        letter-spacing: 0;
+      }
+
+      .brand span {
+        color: var(--gold);
+      }
+
+      .back-home {
+        font-size: 13px;
+
+        color: var(--muted);
+
+        transition: color 0.3s ease;
+      }
+
+      .back-home:hover {
+        color: var(--gold);
+      }
+
+      /* =========================
+       MAIN
+    ========================= */
+
+      main {
+        width: min(var(--max-width), calc(100% - 48px));
+
+        margin: 0 auto;
+      }
+
+      /* =========================
+       HERO
+    ========================= */
+
+      .hero {
+        min-height: 62vh;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        padding: 100px 0 90px;
+
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow {
+        color: var(--gold);
+
+        font-size: 12px;
+
+        letter-spacing: 0;
+
+        margin-bottom: 24px;
+      }
+
+      .hero h1 {
+        max-width: 900px;
+
+        font-family: "Arad", sans-serif;
+
+        font-size: clamp(58px, 9vw, 118px);
+
+        font-weight: 500;
+
+        line-height: 1.05;
+
+        letter-spacing: -0.035em;
+      }
+
+      .hero h1 span {
+        color: var(--gold);
+      }
+
+      .hero-description {
+        max-width: 650px;
+
+        margin-top: 34px;
+
+        color: var(--muted);
+
+        font-size: 16px;
+
+        line-height: 2;
+      }
+
+      /* =========================
+       PROJECTS
+    ========================= */
+
+      .projects {
+        padding: 110px 0 120px;
+      }
+
+      .section-heading {
+        display: flex;
+
+        align-items: baseline;
+
+        justify-content: space-between;
+
+        margin-bottom: 48px;
+      }
+
+      .section-heading h2 {
+        font-family: "Arad", sans-serif;
+
+        font-size: 38px;
+
+        font-weight: 500;
+
+        line-height: 1.3;
+      }
+
+      .section-number {
+        color: var(--muted);
+
+        font-size: 12px;
+      }
+
+      /* =========================
+       PROJECT GRID
+    ========================= */
+
+      .project-grid {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 28px;
+      }
+
+      .project-card {
+        display: block;
+
+        border: 1px solid var(--line);
+
+        background: #111111;
+
+        overflow: hidden;
+
+        transition:
+          transform 0.4s ease,
+          border-color 0.4s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-6px);
+
+        border-color: rgba(212, 175, 55, 0.5);
+      }
+
+      /* =========================
+       PROJECT IMAGE
+    ========================= */
+
+      .project-image {
+        aspect-ratio: 16 / 10;
+
+        overflow: hidden;
+
+        background: #161616;
+      }
+
+      .project-image img {
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+      }
+
+      /* =========================
+       PROJECT INFO
+    ========================= */
+
+      .project-info {
+        padding: 26px 28px 30px;
+      }
+
+      .project-category {
+        color: var(--gold);
+
+        font-size: 11px;
+
+        margin-bottom: 10px;
+      }
+
+      .project-info h3 {
+        font-family: "Arad", sans-serif;
+
+        font-size: 30px;
+
+        font-weight: 500;
+
+        line-height: 1.3;
+
+        margin-bottom: 10px;
+
+        direction: ltr;
+
+        text-align: right;
+      }
+
+      .project-info p {
+        max-width: 500px;
+
+        color: var(--muted);
+
+        font-size: 14px;
+
+        line-height: 2;
+      }
+
+      .view-project {
+        display: inline-block;
+
+        margin-top: 22px;
+
+        color: var(--white);
+
+        font-size: 12px;
+
+        transition: color 0.3s ease;
+      }
+
+      .project-card:hover .view-project {
+        color: var(--gold);
+      }
+
+      /* =========================
+       BOTTOM NAVIGATION
+    ========================= */
+
+      .bottom-navigation {
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        padding: 34px 0;
+
+        border-top: 1px solid var(--line);
+      }
+
+      .bottom-navigation a {
+        color: var(--muted);
+
+        font-size: 13px;
+
+        transition: color 0.3s ease;
+      }
+
+      .bottom-navigation a:hover {
+        color: var(--gold);
+      }
+
+      /* =========================
+       FOOTER
+    ========================= */
+
+      footer {
+        border-top: 1px solid var(--line);
+
+        padding: 34px 0 42px;
+      }
+
+      .footer-inner {
+        width: min(var(--max-width), calc(100% - 48px));
+
+        margin: 0 auto;
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+      }
+
+      .footer-name {
+        font-family: "Arad", sans-serif;
+
+        font-size: 16px;
+
+        font-weight: 500;
+      }
+
+      .footer-copy {
+        color: var(--muted);
+
+        font-size: 11px;
+      }
+
+      /* =========================
+       RESPONSIVE
+    ========================= */
+
+      @media (max-width: 750px) {
+        .nav {
+          width: min(var(--max-width), calc(100% - 32px));
+
+          height: 72px;
+        }
+
+        main {
+          width: min(var(--max-width), calc(100% - 32px));
+        }
+
+        .hero {
+          min-height: 60vh;
+
+          padding: 80px 0 70px;
+        }
+
+        .hero h1 {
+          font-size: clamp(54px, 17vw, 82px);
+
+          line-height: 1.08;
+        }
+
+        .hero-description {
+          font-size: 14px;
+
+          line-height: 2;
+        }
+
+        .projects {
+          padding: 80px 0 90px;
+        }
+
+        .section-heading {
+          margin-bottom: 30px;
+        }
+
+        .section-heading h2 {
+          font-size: 30px;
+        }
+
+        .project-grid {
+          grid-template-columns: 1fr;
+
+          gap: 20px;
+        }
+
+        .project-info {
+          padding: 22px 22px 26px;
+        }
+
+        .project-info h3 {
+          font-size: 27px;
+        }
+
+        .footer-inner {
+          width: min(var(--max-width), calc(100% - 32px));
+
+          flex-direction: column;
+
+          align-items: flex-start;
+
+          gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- =========================
+       HEADER
+  ========================= -->
+
+    <header>
+      <nav class="nav">
+        <a href="index-fa.html" class="brand"> محمد <span>امین‌زاده</span> </a>
+
+        <a href="index-fa.html#work" class="back-home">
+          بازگشت به نمونه‌کارها ←
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =========================
+         HERO
+    ========================= -->
+
+      <section class="hero">
+        <div class="eyebrow">نمونه‌کارهای منتخب</div>
+
+        <h1>طراحی لوگو</h1>
+
+        <p class="hero-description">
+          مجموعه‌ای از پروژه‌های منتخب طراحی لوگو با رویکردی مینیمال و متمایز،
+          برای برندها، کسب‌وکارهای دیجیتال و پروژه‌های مفهومی.
+        </p>
+      </section>
+
+      <!-- =========================
+         PROJECTS
+    ========================= -->
+
+      <section class="projects">
+        <div class="section-heading">
+          <h2>پروژه‌های منتخب</h2>
+
+          <div class="section-number">۰۳ پروژه</div>
+        </div>
+
+        <div class="project-grid">
+          <!-- =====================
+             SURIN
+        ====================== -->
+
+          <a href="work-surin.html" class="project-card">
+            <div class="project-image">
+              <img
+                src="images/surin-hero.jpg"
+                alt="لوگوی SURIN"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="project-info">
+              <div class="project-category">۰۱ · طراحی لوگو</div>
+
+              <h3>SURIN</h3>
+
+              <p>
+                یک مفهوم هویت طبیعی و مینیمال با تمرکز بر سادگی، فرم‌های ارگانیک
+                و شخصیتی ظریف و معاصر.
+              </p>
+
+              <span class="view-project"> مشاهده مطالعه موردی ← </span>
+            </div>
+          </a>
+
+          <!-- =====================
+             NOVA
+        ====================== -->
+
+          <a href="work-nova.html" class="project-card">
+            <div class="project-image">
+              <img src="images/nova-hero.jpg" alt="لوگوی NOVA" loading="lazy" />
+            </div>
+
+            <div class="project-info">
+              <div class="project-category">۰۲ · طراحی لوگو</div>
+
+              <h3>NOVA</h3>
+
+              <p>
+                یک مفهوم برند فناوری معاصر با تمرکز بر شفافیت، سادگی و محصولات
+                دیجیتال.
+              </p>
+
+              <span class="view-project"> مشاهده مطالعه موردی ← </span>
+            </div>
+          </a>
+
+          <!-- =====================
+             PAYDAR
+        ====================== -->
+
+          <a href="work-paydar.html" class="project-card">
+            <div class="project-image">
+              <img
+                src="images/paydar-hero.jpg"
+                alt="لوگوی PAYDAR"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="project-info">
+              <div class="project-category">۰۳ · طراحی لوگو</div>
+
+              <h3>PAYDAR</h3>
+
+              <p>
+                یک مفهوم هویت هندسی با تمرکز بر پایداری، ساختار و تداوم برای
+                حوزه املاک و ساخت‌وساز.
+              </p>
+
+              <span class="view-project"> مشاهده مطالعه موردی ← </span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- =========================
+         BOTTOM NAVIGATION
+    ========================= -->
+
+      <div class="bottom-navigation">
+        <a href="index-fa.html#work"> ← بازگشت به نمونه‌کارها </a>
+
+        <a href="index-fa.html"> صفحه اصلی → </a>
+      </div>
+    </main>
+
+    <!-- =========================
+       FOOTER
+  ========================= -->
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-name">محمد امین‌زاده</div>
+
+        <div class="footer-copy">© ۲۰۲۶ محمد امین‌زاده</div>
+      </div>
+    </footer>
+  </body>
+</html>
