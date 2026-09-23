@@ -1,58 +1,108 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- ================================
-         BASIC SETTINGS
-    ================================= -->
+    <!-- =========================================================
+         BASIC DOCUMENT SETTINGS
+    ========================================================== -->
 
     <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
 
     <meta
       name="description"
-      content="Mohammad Aminzadeh — Pianist, Composer, Web Developer and Logo Designer. Turning emotions into music, design and digital experiences."
+      content="Mohammad Aminzadeh creates distinctive visual identities, professional websites, and original music designed to make ideas meaningful and memorable."
     />
-
-    <meta name="author" content="Mohammad Aminzadeh" />
 
     <meta
-      name="keywords"
-      content="Mohammad Aminzadeh, Pianist, Composer, Web Developer, Logo Designer, Personal Brand"
+      name="author"
+      content="Mohammad Aminzadeh"
     />
 
-    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large"
+    />
 
-    <meta name="googlebot" content="index, follow" />
+    <meta
+      name="googlebot"
+      content="index, follow"
+    />
 
-    <meta name="theme-color" content="#0d0d0d" />
+    <meta
+      name="theme-color"
+      content="#0d0d0d"
+    />
 
-    <!--
-        CANONICAL URL
-        Replace with your real domain once the site is live
-        (e.g. your custom domain or your GitHub Pages URL).
-    -->
+    <meta
+      name="format-detection"
+      content="telephone=no"
+    />
 
-    <link rel="canonical" href="https://mohammadaminzaadeh.github.io/" />
+    <!-- =========================================================
+         CANONICAL
+    ========================================================== -->
 
-    <title>Mohammad Aminzadeh | Pianist · Creator · Developer</title>
+    <link
+      rel="canonical"
+      href="https://mohammadaminzaadeh.github.io/"
+    />
 
-    <!-- ================================
-         OPEN GRAPH / FACEBOOK / LINKEDIN
-    ================================= -->
+    <!-- =========================================================
+         LANGUAGE VERSIONS
+    ========================================================== -->
 
-    <meta property="og:type" content="website" />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://mohammadaminzaadeh.github.io/"
+    />
 
-    <meta property="og:url" content="https://mohammadaminzaadeh.github.io/" />
+    <link
+      rel="alternate"
+      hreflang="fa"
+      href="https://mohammadaminzaadeh.github.io/index-fa.html"
+    />
+
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://mohammadaminzaadeh.github.io/"
+    />
+
+    <!-- =========================================================
+         TITLE
+    ========================================================== -->
+
+    <title>
+      Mohammad Aminzadeh | Pianist, Creator, Developer
+    </title>
+
+    <!-- =========================================================
+         OPEN GRAPH
+    ========================================================== -->
+
+    <meta
+      property="og:type"
+      content="website"
+    />
+
+    <meta
+      property="og:url"
+      content="https://mohammadaminzaadeh.github.io/"
+    />
 
     <meta
       property="og:title"
-      content="Mohammad Aminzadeh | Pianist · Creator · Developer"
+      content="Mohammad Aminzadeh | Pianist, Creator, Developer"
     />
 
     <meta
       property="og:description"
-      content="Mohammad Aminzadeh — Pianist, Composer, Web Developer and Logo Designer. Turning emotions into music, design and digital experiences."
+      content="Distinctive visual identities, professional websites, and original music designed to make ideas meaningful and memorable."
     />
 
     <meta
@@ -60,26 +110,58 @@
       content="https://mohammadaminzaadeh.github.io/images/mohammad-aminzadeh-1.jpg"
     />
 
-    <meta property="og:image:alt" content="Mohammad Aminzadeh" />
+    <meta
+      property="og:image:type"
+      content="image/jpeg"
+    />
 
-    <meta property="og:site_name" content="Mohammad Aminzadeh" />
+    <meta
+      property="og:image:width"
+      content="1254"
+    />
 
-    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:image:height"
+      content="1254"
+    />
 
-    <!-- ================================
-         TWITTER CARD
-    ================================= -->
+    <meta
+      property="og:image:alt"
+      content="Mohammad Aminzadeh"
+    />
 
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="og:site_name"
+      content="Mohammad Aminzadeh"
+    />
+
+    <meta
+      property="og:locale"
+      content="en_US"
+    />
+
+    <meta
+      property="og:locale:alternate"
+      content="fa_IR"
+    />
+
+    <!-- =========================================================
+         TWITTER / X CARD
+    ========================================================== -->
+
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
 
     <meta
       name="twitter:title"
-      content="Mohammad Aminzadeh | Pianist · Creator · Developer"
+      content="Mohammad Aminzadeh | Pianist, Creator, Developer"
     />
 
     <meta
       name="twitter:description"
-      content="Mohammad Aminzadeh — Pianist, Composer, Web Developer and Logo Designer. Turning emotions into music, design and digital experiences."
+      content="Distinctive visual identities, professional websites, and original music designed to make ideas meaningful and memorable."
     />
 
     <meta
@@ -87,136 +169,201 @@
       content="https://mohammadaminzaadeh.github.io/images/mohammad-aminzadeh-1.jpg"
     />
 
-    <!-- ================================
+    <meta
+      name="twitter:image:alt"
+      content="Mohammad Aminzadeh"
+    />
+
+    <!-- =========================================================
+         PERFORMANCE
+    ========================================================== -->
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      as="image"
+      href="images/mohammad-aminzadeh-1.jpg"
+      fetchpriority="high"
+    />
+
+    <!-- =========================================================
          GOOGLE FONTS
-    ================================= -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    ========================================================== -->
 
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- ================================
-         ALL CSS
-    ================================= -->
+    <!-- =========================================================
+         CSS
+    ========================================================== -->
 
     <style>
-      /* =================================
-           VARIABLES
-        ================================= */
+      /* =========================================================
+         DESIGN TOKENS
+      ========================================================== */
 
       :root {
         --black: #0d0d0d;
-
         --black-soft: #111111;
-
         --black-card: #171717;
 
         --gold: #d4af37;
-
         --gold-light: #e5c65a;
 
         --white: #ffffff;
-
         --gray: #a4a4a4;
-
+        --gray-light: #d0d0d0;
         --gray-dark: #777777;
 
         --border: rgba(255, 255, 255, 0.09);
-
+        --border-strong: rgba(255, 255, 255, 0.18);
         --gold-border: rgba(212, 175, 55, 0.3);
 
         --max-width: 1180px;
+
+        --transition-fast: 0.25s ease;
+        --transition: 0.35s ease;
+        --transition-slow: 0.45s ease;
       }
+
+      /* =========================================================
+         PAGE TRANSITION
+      ========================================================== */
 
       #page-transition {
         position: fixed;
         inset: 0;
-        background: var(--black);
         z-index: 9999;
+
+        background: var(--black);
+
         opacity: 1;
-        transition: opacity 0.45s ease;
+        visibility: visible;
+
+        transition:
+          opacity var(--transition-slow),
+          visibility var(--transition-slow);
       }
 
       #page-transition.hide {
         opacity: 0;
+        visibility: hidden;
         pointer-events: none;
       }
 
-      /* =================================
-           RESET
-        ================================= */
+      /* =========================================================
+         RESET
+      ========================================================== */
 
-      * {
+      *,
+      *::before,
+      *::after {
         margin: 0;
-
         padding: 0;
-
         box-sizing: border-box;
       }
 
       html {
         scroll-behavior: smooth;
+        scroll-padding-top: 90px;
       }
 
       body {
+        min-height: 100vh;
+
         font-family: "Inter", sans-serif;
-
-        background: var(--black);
-
-        color: var(--white);
-
         line-height: 1.6;
 
+        background: var(--black);
+        color: var(--white);
+
         overflow-x: hidden;
+
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body,
+      button,
+      a {
+        -webkit-tap-highlight-color: transparent;
       }
 
       a {
-        text-decoration: none;
-
         color: inherit;
+        text-decoration: none;
       }
+
+      button,
+      a {
+        font: inherit;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      ::selection {
+        background: var(--gold);
+        color: #090909;
+      }
+
+      /* =========================================================
+         ACCESSIBILITY
+      ========================================================== */
 
       .visually-hidden-skip {
         position: absolute;
+        top: 12px;
         left: -9999px;
-        top: auto;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        z-index: 2000;
+
+        width: auto;
+        height: auto;
+
+        padding: 10px 16px;
+
+        background: var(--gold);
+        color: #090909;
+
+        border-radius: 4px;
+
+        z-index: 10000;
       }
 
       .visually-hidden-skip:focus {
         left: 12px;
-        top: 12px;
-        width: auto;
-        height: auto;
-        padding: 10px 16px;
-        background: var(--gold);
-        color: #090909;
-        border-radius: 4px;
       }
 
-      img {
-        max-width: 100%;
-
-        display: block;
+      :focus-visible {
+        outline: 2px solid var(--gold);
+        outline-offset: 4px;
       }
 
-      /* =================================
-           GLOBAL CONTAINER
-        ================================= */
+      /* =========================================================
+         GLOBAL CONTAINER
+      ========================================================== */
 
       .container {
-        width: 90%;
-        max-width: var(--max-width);
-        margin-left: auto;
-        margin-right: auto;
+        width: min(90%, var(--max-width));
+        margin-inline: auto;
       }
 
       section {
@@ -227,47 +374,46 @@
         color: var(--gold);
       }
 
+      /* =========================================================
+         TYPOGRAPHY
+      ========================================================== */
+
       .section-label {
+        margin-bottom: 16px;
+
         color: var(--gold);
 
         font-family: "Playfair Display", serif;
-
-        font-style: italic;
-
         font-size: 17px;
-
+        font-style: italic;
         font-weight: 500;
-
-        margin-bottom: 16px;
       }
 
       .section-title {
-        font-family: "Playfair Display", serif;
-
-        font-size: clamp(2.4rem, 5vw, 4rem);
-
-        line-height: 1.08;
-
         margin-bottom: 25px;
+
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2.4rem, 5vw, 4rem);
+        font-weight: 600;
+        line-height: 1.08;
       }
 
       .section-description {
-        color: var(--gray);
-
         max-width: 680px;
 
+        color: var(--gray);
+
         font-size: 17px;
+        line-height: 1.8;
       }
 
-      /* =================================
-           NAVIGATION
-        ================================= */
+      /* =========================================================
+         HEADER
+      ========================================================== */
 
       header {
         position: fixed;
-
         top: 0;
-
         left: 0;
 
         width: 100%;
@@ -276,30 +422,28 @@
 
         background: rgba(13, 13, 13, 0.82);
 
-        backdrop-filter: blur(18px);
-
-        -webkit-backdrop-filter: blur(18px);
-
         border-bottom: 1px solid var(--border);
+
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
       }
 
       nav {
-        height: 78px;
+        min-height: 78px;
 
         display: flex;
-
         align-items: center;
-
         justify-content: space-between;
+
+        gap: 25px;
       }
 
       .logo {
+        flex-shrink: 0;
+
         font-family: "Playfair Display", serif;
-
         font-size: 22px;
-
         font-weight: 700;
-
         letter-spacing: 0.4px;
       }
 
@@ -307,24 +451,28 @@
         color: var(--gold);
       }
 
+      .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+
       .nav-links {
         display: flex;
-
         align-items: center;
-
         gap: 30px;
-
-        list-style: none;
       }
 
       .nav-links a {
-        color: #d0d0d0;
+        color: var(--gray-light);
 
         font-size: 14px;
-
         font-weight: 500;
 
-        transition: 0.3s ease;
+        transition:
+          color var(--transition-fast),
+          background var(--transition-fast),
+          border-color var(--transition-fast);
       }
 
       .nav-links a:hover {
@@ -341,20 +489,26 @@
 
       .nav-button:hover {
         background: var(--gold);
-
         color: #090909 !important;
       }
+
+      /* =========================================================
+         LANGUAGE SWITCH
+      ========================================================== */
 
       .lang-switch {
         display: flex;
         align-items: center;
         gap: 8px;
-        font-size: 13px;
+
         color: var(--gray-dark);
+
+        font-size: 13px;
+        white-space: nowrap;
       }
 
       .lang-switch a {
-        transition: color 0.25s ease;
+        transition: color var(--transition-fast);
       }
 
       .lang-switch a.active {
@@ -367,25 +521,43 @@
       }
 
       .lang-switch .divider {
-        color: var(--border);
+        color: var(--gray-dark);
       }
 
-      /* =================================
-           HERO
-        ================================= */
+      /* =========================================================
+         HERO
+      ========================================================== */
 
       .hero {
+        position: relative;
+
         min-height: 100vh;
 
         display: flex;
-
         align-items: center;
 
-        position: relative;
+        padding-top: 125px;
 
         overflow: hidden;
+      }
 
-        padding-top: 120px;
+      .hero::before {
+        content: "";
+
+        position: absolute;
+        top: -250px;
+        right: -250px;
+
+        width: 550px;
+        height: 550px;
+
+        border-radius: 50%;
+
+        background: rgba(212, 175, 55, 0.035);
+
+        filter: blur(80px);
+
+        pointer-events: none;
       }
 
       .hero-grid {
@@ -399,117 +571,117 @@
       }
 
       .hero-small {
+        margin-bottom: 22px;
+
         color: var(--gray);
 
         font-size: 15px;
-
         font-weight: 400;
-
-        margin-bottom: 22px;
+        letter-spacing: 0.2px;
       }
 
       .hero h1 {
-        font-family: "Playfair Display", serif;
-
-        font-size: clamp(3.5rem, 7vw, 6.5rem);
-
-        line-height: 0.98;
-
         margin-bottom: 30px;
+
+        font-family: "Playfair Display", serif;
+        font-size: clamp(3.5rem, 7vw, 6.5rem);
+        font-weight: 600;
+        line-height: 0.98;
+        letter-spacing: -1.5px;
       }
 
       .hero-description {
-        color: #aaa;
-
-        font-size: 18px;
-
-        max-width: 600px;
+        max-width: 620px;
 
         margin-bottom: 38px;
+
+        color: #aaaaaa;
+
+        font-size: 18px;
+        line-height: 1.8;
       }
 
       .hero-buttons {
         display: flex;
-
-        gap: 15px;
-
         flex-wrap: wrap;
+        gap: 15px;
       }
 
+      /* =========================================================
+         BUTTONS
+      ========================================================== */
+
       .btn {
+        min-height: 50px;
+
         display: inline-flex;
-
         align-items: center;
-
         justify-content: center;
 
         padding: 14px 28px;
 
+        font-size: 14px;
         font-weight: 600;
 
-        font-size: 14px;
+        border: 1px solid transparent;
 
-        transition: 0.3s ease;
+        transition:
+          transform var(--transition),
+          background var(--transition),
+          color var(--transition),
+          border-color var(--transition);
       }
 
       .btn-primary {
         background: var(--gold);
-
         color: #090909;
       }
 
       .btn-primary:hover {
         background: var(--gold-light);
-
         transform: translateY(-3px);
       }
 
       .btn-outline {
-        border: 1px solid rgba(255, 255, 255, 0.2);
-
-        color: white;
+        border-color: var(--border-strong);
+        color: var(--white);
       }
 
       .btn-outline:hover {
         border-color: var(--gold);
-
         color: var(--gold);
-
         transform: translateY(-3px);
       }
 
-      /* =================================
-           HERO PORTRAIT
-        ================================= */
+      /* =========================================================
+         HERO VISUAL
+      ========================================================== */
 
       .hero-visual {
         position: relative;
 
         display: flex;
-
-        justify-content: center;
-
         align-items: center;
+        justify-content: center;
       }
 
       .portrait-frame {
+        position: relative;
+
         width: min(400px, 82vw);
 
         aspect-ratio: 4 / 5;
 
-        border: 1px solid var(--gold-border);
-
         padding: 10px;
 
-        position: relative;
+        border: 1px solid var(--gold-border);
       }
 
       .portrait-inner {
-        width: 100%;
-
-        height: 100%;
-
         position: relative;
+
+        width: 100%;
+        height: 100%;
 
         overflow: hidden;
 
@@ -518,26 +690,22 @@
 
       .portrait-image {
         width: 100%;
-
         height: 100%;
 
         object-fit: cover;
-
         object-position: center;
-
-        display: block;
       }
 
       .portrait-overlay {
         position: absolute;
-
         inset: 0;
 
-        background: linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0.78),
-          rgba(0, 0, 0, 0.04) 65%
-        );
+        background:
+          linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.78),
+            rgba(0, 0, 0, 0.04) 65%
+          );
 
         pointer-events: none;
       }
@@ -545,9 +713,8 @@
       .portrait-text {
         position: absolute;
 
-        bottom: 25px;
-
         left: 25px;
+        bottom: 25px;
 
         z-index: 2;
       }
@@ -556,59 +723,21 @@
         display: block;
 
         font-family: "Playfair Display", serif;
-
         font-size: 27px;
+        font-weight: 600;
       }
 
       .portrait-text span {
         color: var(--gold);
 
+        font-family: "Playfair Display", serif;
         font-size: 13px;
-
         font-style: italic;
-
-        font-family: "Playfair Display", serif;
       }
 
-      .floating-card {
-        position: absolute;
-
-        bottom: 25px;
-
-        right: -45px;
-
-        background: rgba(24, 24, 24, 0.92);
-
-        backdrop-filter: blur(15px);
-
-        border: 1px solid var(--border);
-
-        padding: 17px 20px;
-
-        min-width: 180px;
-
-        z-index: 5;
-      }
-
-      .floating-card span {
-        display: block;
-
-        color: var(--gray);
-
-        font-size: 12px;
-
-        margin-bottom: 4px;
-      }
-
-      .floating-card strong {
-        font-family: "Playfair Display", serif;
-        color: var(--gold);
-        font-size: 15px;
-      }
-
-      /* =================================
-           ABOUT
-        ================================= */
+      /* =========================================================
+         ABOUT
+      ========================================================== */
 
       .about {
         background: var(--black-soft);
@@ -619,58 +748,54 @@
 
         grid-template-columns: 0.85fr 1.15fr;
 
-        gap: 90px;
-
         align-items: center;
+
+        gap: 90px;
       }
 
       .about-image {
         width: 100%;
-
         max-width: 430px;
 
         aspect-ratio: 4 / 5;
 
+        padding: 10px;
+
         overflow: hidden;
 
         border: 1px solid var(--gold-border);
-
-        padding: 10px;
       }
 
       .about-image img {
         width: 100%;
-
         height: 100%;
 
         object-fit: cover;
-
         object-position: center;
-
-        display: block;
       }
 
       .about-content p {
-        color: #aaa;
+        margin-bottom: 18px;
+
+        color: #aaaaaa;
 
         font-size: 17px;
-
-        margin-bottom: 18px;
+        line-height: 1.85;
       }
 
       .signature {
         margin-top: 35px;
 
-        font-family: "Playfair Display", serif;
-
-        font-size: 28px;
-
         color: var(--gold);
+
+        font-family: "Playfair Display", serif;
+        font-size: 28px;
+        font-weight: 500;
       }
 
-      /* =================================
-           EXPERTISE
-        ================================= */
+      /* =========================================================
+         SERVICES
+      ========================================================== */
 
       .services-grid {
         display: grid;
@@ -683,17 +808,21 @@
       }
 
       .service-card {
+        position: relative;
+
+        min-height: 320px;
+
+        padding: 35px 27px;
+
+        overflow: hidden;
+
         background: var(--black-card);
 
         border: 1px solid var(--border);
 
-        padding: 35px 27px;
-
-        transition: 0.35s ease;
-
-        position: relative;
-
-        overflow: hidden;
+        transition:
+          transform var(--transition),
+          border-color var(--transition);
       }
 
       .service-card::before {
@@ -702,25 +831,21 @@
         position: absolute;
 
         top: 0;
-
         left: 0;
 
         width: 100%;
-
         height: 2px;
 
         background: var(--gold);
 
         transform: scaleX(0);
-
         transform-origin: left;
 
-        transition: 0.35s ease;
+        transition: transform var(--transition);
       }
 
       .service-card:hover {
         transform: translateY(-8px);
-
         border-color: var(--gold-border);
       }
 
@@ -729,102 +854,108 @@
       }
 
       .service-icon {
-        font-family: "Playfair Display", serif;
-        font-style: italic;
-        font-size: 26px;
-        color: var(--gold);
+        width: 40px;
+        height: 40px;
 
         margin-bottom: 22px;
       }
 
+      .service-icon svg {
+        display: block;
+        width: 40px;
+        height: 40px;
+      }
+
       .service-card h3 {
-        font-family: "Playfair Display", serif;
-
-        font-size: 23px;
-
         margin-bottom: 12px;
+
+        font-family: "Playfair Display", serif;
+        font-size: 23px;
+        font-weight: 600;
       }
 
       .service-card p {
-        color: #888;
+        color: #888888;
 
         font-size: 14px;
+        line-height: 1.8;
       }
 
-      /* =================================
-           WORK
-
-================================= */
+      /* =========================================================
+         SELECTED WORK
+      ========================================================== */
 
       .work {
         background: var(--black-soft);
       }
 
       .work-grid {
-        width: 100%;
-        max-width: 100%;
         display: grid;
+
         grid-template-columns: repeat(3, 1fr);
+
         gap: 24px;
+
         margin-top: 55px;
       }
 
       .work-card {
-        min-width: 0;
+        position: relative;
+
         width: 100%;
-      }
+        min-height: 310px;
 
-      .work-card {
-        min-height: 300px;
-
-        border: 1px solid var(--border);
-
-        background: var(--black-card);
+        display: block;
 
         padding: 35px;
 
-        position: relative;
-
         overflow: hidden;
 
-        transition: 0.35s ease;
+        background: var(--black-card);
+
+        border: 1px solid var(--border);
+
+        transition:
+          transform var(--transition),
+          border-color var(--transition);
       }
 
       .work-card:hover {
         transform: translateY(-7px);
-
         border-color: var(--gold-border);
       }
 
       .work-category {
+        margin-bottom: 70px;
+
         color: var(--gold);
 
         font-family: "Playfair Display", serif;
-
-        font-style: italic;
-
         font-size: 14px;
-
-        margin-bottom: 70px;
+        font-style: italic;
       }
 
       .work-card h3 {
-        font-family: "Playfair Display", serif;
-
-        font-size: 30px;
-
         margin-bottom: 10px;
+
+        font-family: "Playfair Display", serif;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.15;
       }
 
       .work-card p {
-        color: #888;
-
         max-width: 450px;
+
+        color: #888888;
+
+        font-size: 15px;
+        line-height: 1.8;
       }
 
-      /* =================================
-           PHILOSOPHY
-        ================================= */
+      /* =========================================================
+         PHILOSOPHY
+      ========================================================== */
 
       .philosophy {
         text-align: center;
@@ -836,59 +967,82 @@
         margin: 30px auto 0;
 
         font-family: "Playfair Display", serif;
-
         font-size: clamp(2rem, 5vw, 4.5rem);
-
+        font-weight: 500;
         line-height: 1.15;
       }
 
-      /* =================================
-           CONTACT
-        ================================= */
+      /* =========================================================
+         CONTACT
+      ========================================================== */
 
       .contact {
         background: var(--black-soft);
       }
 
       .contact-box {
-        border: 1px solid var(--gold-border);
+        position: relative;
 
         padding: 65px;
 
+        overflow: hidden;
+
         text-align: center;
 
-        position: relative;
+        border: 1px solid var(--gold-border);
+      }
 
-        overflow: hidden;
+      .contact-box::before {
+        content: "";
+
+        position: absolute;
+
+        top: -160px;
+        left: 50%;
+
+        width: 380px;
+        height: 380px;
+
+        transform: translateX(-50%);
+
+        border-radius: 50%;
+
+        background: rgba(212, 175, 55, 0.035);
+
+        filter: blur(70px);
+
+        pointer-events: none;
       }
 
       .contact-box > * {
         position: relative;
-
         z-index: 2;
       }
 
       .contact-box h2 {
+        max-width: 850px;
+
+        margin: 0 auto 18px;
+
         font-family: "Playfair Display", serif;
-
         font-size: clamp(2.5rem, 5vw, 4.5rem);
-
+        font-weight: 600;
         line-height: 1.1;
-
-        margin-bottom: 18px;
       }
 
       .contact-box p {
-        color: #999;
-
-        max-width: 600px;
+        max-width: 650px;
 
         margin: 0 auto 30px;
+
+        color: #999999;
+
+        line-height: 1.8;
       }
 
-      /* =================================
-           FOOTER
-        ================================= */
+      /* =========================================================
+         FOOTER
+      ========================================================== */
 
       footer {
         padding: 30px 0;
@@ -898,46 +1052,44 @@
 
       .footer-content {
         display: flex;
-
-        justify-content: space-between;
-
         align-items: center;
+        justify-content: space-between;
 
         gap: 20px;
       }
 
       .footer-content p {
-        color: #777;
+        color: #777777;
 
         font-size: 13px;
       }
 
       .socials {
         display: flex;
+        align-items: center;
 
         gap: 20px;
       }
 
       .socials a {
-        color: #888;
+        color: #888888;
 
         font-size: 13px;
 
-        transition: 0.3s ease;
+        transition: color var(--transition-fast);
       }
 
       .socials a:hover {
         color: var(--gold);
       }
 
-      /* =================================
-           TABLET
-        ================================= */
+      /* =========================================================
+         TABLET
+      ========================================================== */
 
       @media (max-width: 950px) {
         .hero-grid {
           grid-template-columns: 1fr;
-
           gap: 60px;
         }
 
@@ -946,9 +1098,7 @@
         }
 
         .hero-description {
-          margin-left: auto;
-
-          margin-right: auto;
+          margin-inline: auto;
         }
 
         .hero-buttons {
@@ -961,22 +1111,25 @@
 
         .about-grid {
           grid-template-columns: 1fr;
-
           gap: 50px;
         }
 
         .about-image {
-          margin: 0 auto;
+          margin-inline: auto;
         }
 
         .services-grid {
           grid-template-columns: repeat(2, 1fr);
         }
+
+        .work-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
       }
 
-      /* =================================
-           MOBILE
-        ================================= */
+      /* =========================================================
+         MOBILE
+      ========================================================== */
 
       @media (max-width: 650px) {
         section {
@@ -984,7 +1137,11 @@
         }
 
         nav {
-          height: 70px;
+          min-height: 70px;
+        }
+
+        .nav-right {
+          gap: 15px;
         }
 
         .nav-links {
@@ -997,6 +1154,7 @@
 
         .hero h1 {
           font-size: 3.4rem;
+          letter-spacing: -0.8px;
         }
 
         .hero-small {
@@ -1007,25 +1165,22 @@
           font-size: 16px;
         }
 
-        .portrait-frame {
-          width: 85vw;
-
-          max-width: 380px;
+        .hero-buttons {
+          flex-direction: column;
+          align-items: stretch;
         }
 
-        .floating-card {
-          right: -5px;
+        .hero-buttons .btn {
+          width: 100%;
+        }
 
-          bottom: 15px;
-
-          min-width: 160px;
-
-          padding: 14px 16px;
+        .portrait-frame {
+          width: 85vw;
+          max-width: 380px;
         }
 
         .portrait-text {
           left: 18px;
-
           bottom: 18px;
         }
 
@@ -1035,6 +1190,10 @@
 
         .services-grid {
           grid-template-columns: 1fr;
+        }
+
+        .service-card {
+          min-height: auto;
         }
 
         .work-grid {
@@ -1055,17 +1214,37 @@
 
         .footer-content {
           flex-direction: column;
-
           text-align: center;
+        }
+
+        .socials {
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+      }
+
+      /* =========================================================
+         REDUCED MOTION
+      ========================================================== */
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
         }
       }
     </style>
 
-    <!-- ================================
-         STRUCTURED DATA (SCHEMA.ORG)
-         Helps Google understand who you are
-         and can enable rich results.
-    ================================= -->
+    <!-- =========================================================
+         STRUCTURED DATA
+    ========================================================== -->
 
     <script type="application/ld+json">
       {
@@ -1075,105 +1254,170 @@
         "alternateName": "mohammadaminzaadeh",
         "url": "https://mohammadaminzaadeh.github.io/",
         "image": "https://mohammadaminzaadeh.github.io/images/mohammad-aminzadeh-1.jpg",
-        "jobTitle": ["Web Developer", "Pianist", "Composer", "Logo Designer"],
-        "description": "Mohammad Aminzadeh — Pianist, Composer, Web Developer and Logo Designer. Turning emotions into music, design and digital experiences.",
+        "description": "Mohammad Aminzadeh creates distinctive visual identities, professional websites, and original music designed to make ideas meaningful and memorable.",
+        "jobTitle": "Creative Designer, Web Developer, Pianist and Composer",
         "email": "mailto:mohammadaminzaadeh@gmail.com",
+        "inLanguage": "en-US",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Mashhad",
           "addressCountry": "IR"
         },
         "sameAs": [
-          "https://www.instagram.com/mohammadaminzaadeh?igsh=eGp0aTlqdW4zMWp6",
+          "https://www.instagram.com/mohammadaminzaadeh",
           "https://www.behance.net/mohammaaminzad1",
           "https://github.com/MohammadAminzaadeh"
         ]
       }
     </script>
   </head>
-  <body>
-    <div id="page-transition"></div>
-    <a href="#home" class="visually-hidden-skip">Skip to content</a>
 
-    <!-- =================================
-         NAVIGATION
-    ================================= -->
+  <body>
+    <!-- =========================================================
+         PAGE TRANSITION
+    ========================================================== -->
+
+    <div
+      id="page-transition"
+      aria-hidden="true"
+    ></div>
+
+    <!-- =========================================================
+         ACCESSIBILITY
+    ========================================================== -->
+
+    <a
+      href="#home"
+      class="visually-hidden-skip"
+    >
+      Skip to content
+    </a>
+
+    <!-- =========================================================
+         HEADER
+    ========================================================== -->
 
     <header>
       <div class="container">
         <nav aria-label="Main navigation">
-          <a href="#home" class="logo"> Mohammad <span>Aminzadeh</span> </a>
+          <a
+            href="#home"
+            class="logo"
+            aria-label="Mohammad Aminzadeh, home"
+          >
+            Mohammad <span>Aminzadeh</span>
+          </a>
 
-          <ul class="nav-links">
-            <li>
-              <a href="#about"> About </a>
-            </li>
+          <div class="nav-right">
+            <ul class="nav-links">
+              <li>
+                <a href="#about">About</a>
+              </li>
 
-            <li>
-              <a href="#services"> Expertise </a>
-            </li>
+              <li>
+                <a href="#services">Expertise</a>
+              </li>
 
-            <li>
-              <a href="#work"> Work </a>
-            </li>
+              <li>
+                <a href="#work">Work</a>
+              </li>
 
-            <li>
-              <a href="#contact" class="nav-button"> Let's Connect </a>
-            </li>
-          </ul>
-          <div class="lang-switch">
-            <a href="index.html" class="active">EN</a>
-            <span class="divider">/</span>
-            <a href="index-fa.html">FA</a>
+              <li>
+                <a
+                  href="#contact"
+                  class="nav-button"
+                >
+                  Let's Connect
+                </a>
+              </li>
+            </ul>
+
+            <div
+              class="lang-switch"
+              aria-label="Language selection"
+            >
+              <a
+                href="index.html"
+                class="active"
+                aria-current="page"
+              >
+                EN
+              </a>
+
+              <span
+                class="divider"
+                aria-hidden="true"
+              >
+                /
+              </span>
+
+              <a href="index-fa.html">
+                FA
+              </a>
+            </div>
           </div>
         </nav>
       </div>
     </header>
 
-    <!-- =================================
-         MAIN
-    ================================= -->
+    <!-- =========================================================
+         MAIN CONTENT
+    ========================================================== -->
 
-    <main>
-      <!-- =================================
-             HERO
-        ================================= -->
+    <main id="main-content">
 
-      <section class="hero" id="home">
+      <!-- =======================================================
+           HERO
+      ======================================================== -->
+
+      <section
+        class="hero"
+        id="home"
+        aria-labelledby="hero-title"
+      >
         <div class="container">
           <div class="hero-grid">
-            <!-- HERO TEXT -->
 
             <div class="hero-content">
               <div class="hero-small">
-                Pianist & Composer · Web Developer & Logo Designer
+                Pianist &amp; Composer, Web Developer &amp; Logo Designer
               </div>
 
-              <h1>
+              <h1 id="hero-title">
                 Mohammad<br />
                 Aminzadeh
               </h1>
 
               <p class="hero-description">
-                I create through music, design and technology from piano and
-                composition to digital experiences and visual identities.
+                Distinctive visual identities, polished websites, and music
+                with meaning, created around your vision and designed to leave
+                a lasting impression.
               </p>
 
               <div class="hero-buttons">
-                <a href="#work" class="btn btn-primary"> Explore My Work </a>
+                <a
+                  href="#work"
+                  class="btn btn-primary"
+                >
+                  Explore My Work
+                </a>
 
-                <a href="#contact" class="btn btn-outline"> Let's Connect </a>
+                <a
+                  href="#contact"
+                  class="btn btn-outline"
+                >
+                  Let's Connect
+                </a>
               </div>
             </div>
-
-            <!-- HERO IMAGE -->
 
             <div class="hero-visual">
               <div class="portrait-frame">
                 <div class="portrait-inner">
+
                   <img
                     src="images/mohammad-aminzadeh-1.jpg"
-                    alt="Mohammad Aminzadeh"
+                    alt="Portrait of Mohammad Aminzadeh"
                     class="portrait-image"
                     width="600"
                     height="750"
@@ -1181,37 +1425,42 @@
                     fetchpriority="high"
                   />
 
-                  <div class="portrait-overlay"></div>
+                  <div
+                    class="portrait-overlay"
+                    aria-hidden="true"
+                  ></div>
 
                   <div class="portrait-text">
-                    <strong> Mohammad Aminzadeh </strong>
+                    <strong>
+                      Mohammad Aminzadeh
+                    </strong>
 
-                    <span>Musician · Designer</span>
+                    <span>
+                      Musician, Designer
+                    </span>
                   </div>
+
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
 
-      <!-- =================================
-             ABOUT
-        ================================= -->
+      <!-- =======================================================
+           ABOUT
+      ======================================================== -->
 
-      <section class="about" id="about">
+      <section
+        class="about"
+        id="about"
+        aria-labelledby="about-title"
+      >
         <div class="container">
           <div class="about-grid">
-            <!-- ABOUT IMAGE -->
 
             <div class="about-image">
-              <!--
-                            YOUR ABOUT PHOTO
-
-                            Put your second image here:
-                            images/about-photo.jpg
-                        -->
-
               <img
                 src="images/mohammad-aminzadeh-1.jpg"
                 alt="Mohammad Aminzadeh"
@@ -1221,53 +1470,76 @@
               />
             </div>
 
-            <!-- ABOUT TEXT -->
-
             <div class="about-content">
-              <div class="section-label">About Me</div>
 
-              <h2 class="section-title">
-                Building a creative life with purpose
+              <div class="section-label">
+                About Me
+              </div>
+
+              <h2
+                class="section-title"
+                id="about-title"
+              >
+                Creating work with purpose
               </h2>
 
               <p>
-                I'm Mohammad Aminzadeh, a young creative focused on building
-                meaningful work across music, design and technology.
+                Good work should do more than look good. It should communicate,
+                connect, and stay memorable. That's the idea behind everything
+                I create, from visual identities and websites to music.
               </p>
 
               <p>
-                As a pianist and composer, I explore emotional and cinematic
-                sounds. Through design and web development, I build visual
-                identities and digital experiences that feel simple, modern and
-                memorable.
+                I focus on turning ideas into clear, thoughtful experiences that
+                feel authentic to the people and projects behind them. The
+                process is simple, intentional, and always centered around the
+                result.
               </p>
 
               <p>
-                My goal is simple: create work that people can feel, remember
-                and use.
+                Whether the goal is a stronger identity, a better digital
+                presence, or a meaningful piece of music, every detail has a
+                purpose.
               </p>
 
-              <div class="signature">Mohammad Aminzadeh</div>
+              <div class="signature">
+                Mohammad Aminzadeh
+              </div>
+
             </div>
+
           </div>
         </div>
       </section>
 
-      <!-- =================================
-             EXPERTISE
-        ================================= -->
+      <!-- =======================================================
+           EXPERTISE
+      ======================================================== -->
 
-      <section id="services">
+      <section
+        id="services"
+        aria-labelledby="services-title"
+      >
         <div class="container">
-          <div class="section-label">Expertise</div>
 
-          <h2 class="section-title">What I create</h2>
+          <div class="section-label">
+            Expertise
+          </div>
+
+          <h2
+            class="section-title"
+            id="services-title"
+          >
+            What I create
+          </h2>
 
           <p class="section-description">
-            A creative skill set combining music, visual identity and modern web
-            technology.
+            Thoughtful creative work for people and projects that care about
+            how they look, feel, and are remembered.
           </p>
+
           <div class="services-grid">
+
             <!-- PIANO -->
 
             <article class="service-card">
@@ -1277,6 +1549,8 @@
                   height="40"
                   viewBox="0 0 48 48"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <rect
                     x="6"
@@ -1288,6 +1562,7 @@
                     stroke="#D4AF37"
                     stroke-width="1.4"
                   />
+
                   <line
                     x1="13.2"
                     y1="14"
@@ -1296,6 +1571,7 @@
                     stroke="#D4AF37"
                     stroke-width="1.2"
                   />
+
                   <line
                     x1="20.4"
                     y1="14"
@@ -1304,6 +1580,7 @@
                     stroke="#D4AF37"
                     stroke-width="1.2"
                   />
+
                   <line
                     x1="27.6"
                     y1="14"
@@ -1312,6 +1589,7 @@
                     stroke="#D4AF37"
                     stroke-width="1.2"
                   />
+
                   <line
                     x1="34.8"
                     y1="14"
@@ -1320,17 +1598,39 @@
                     stroke="#D4AF37"
                     stroke-width="1.2"
                   />
-                  <rect x="10.7" y="14" width="5" height="13" fill="#D4AF37" />
-                  <rect x="17.9" y="14" width="5" height="13" fill="#D4AF37" />
-                  <rect x="32.3" y="14" width="5" height="13" fill="#D4AF37" />
+
+                  <rect
+                    x="10.7"
+                    y="14"
+                    width="5"
+                    height="13"
+                    fill="#D4AF37"
+                  />
+
+                  <rect
+                    x="17.9"
+                    y="14"
+                    width="5"
+                    height="13"
+                    fill="#D4AF37"
+                  />
+
+                  <rect
+                    x="32.3"
+                    y="14"
+                    width="5"
+                    height="13"
+                    fill="#D4AF37"
+                  />
                 </svg>
               </div>
 
               <h3>Piano</h3>
 
               <p>
-                Emotional and cinematic piano performances inspired by modern
-                composers and storytelling.
+                Live or recorded piano performances with emotional and
+                cinematic character, created for moments that deserve to be
+                remembered.
               </p>
             </article>
 
@@ -1343,6 +1643,8 @@
                   height="40"
                   viewBox="0 0 48 48"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <ellipse
                     cx="15"
@@ -1352,6 +1654,7 @@
                     transform="rotate(-18 15 33)"
                     fill="#D4AF37"
                   />
+
                   <line
                     x1="20.8"
                     y1="30.5"
@@ -1361,6 +1664,7 @@
                     stroke-width="1.4"
                     stroke-linecap="round"
                   />
+
                   <path
                     d="M20.8 9 C29 11 32 16.5 31.6 22"
                     fill="none"
@@ -1368,6 +1672,7 @@
                     stroke-width="1.4"
                     stroke-linecap="round"
                   />
+
                   <path
                     d="M20.8 15.5 C27 17 29.5 20.5 29.2 24.5"
                     fill="none"
@@ -1381,12 +1686,12 @@
               <h3>Composition</h3>
 
               <p>
-                Creating atmospheric musical ideas, original compositions and
-                cinematic soundscapes.
+                Original music shaped around the mood, story, and atmosphere
+                your project needs.
               </p>
             </article>
 
-            <!-- BRAND DESIGN -->
+            <!-- LOGO DESIGN -->
 
             <article class="service-card">
               <div class="service-icon">
@@ -1395,6 +1700,8 @@
                   height="40"
                   viewBox="0 0 48 48"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <circle
                     cx="18"
@@ -1404,6 +1711,7 @@
                     stroke="#D4AF37"
                     stroke-width="1.4"
                   />
+
                   <rect
                     x="21.6"
                     y="11.6"
@@ -1420,8 +1728,8 @@
               <h3>Logo Design</h3>
 
               <p>
-                Minimal and memorable logos, visual identities and brand systems
-                designed with purpose.
+                Distinctive logos and visual identities that communicate what
+                your brand stands for and remain memorable over time.
               </p>
             </article>
 
@@ -1434,6 +1742,8 @@
                   height="40"
                   viewBox="0 0 48 48"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <rect
                     x="6"
@@ -1445,6 +1755,7 @@
                     stroke="#D4AF37"
                     stroke-width="1.4"
                   />
+
                   <line
                     x1="6"
                     y1="17"
@@ -1453,9 +1764,28 @@
                     stroke="#D4AF37"
                     stroke-width="1.4"
                   />
-                  <circle cx="11" cy="13" r="1.1" fill="#D4AF37" />
-                  <circle cx="15" cy="13" r="1.1" fill="#D4AF37" />
-                  <circle cx="19" cy="13" r="1.1" fill="#D4AF37" />
+
+                  <circle
+                    cx="11"
+                    cy="13"
+                    r="1.1"
+                    fill="#D4AF37"
+                  />
+
+                  <circle
+                    cx="15"
+                    cy="13"
+                    r="1.1"
+                    fill="#D4AF37"
+                  />
+
+                  <circle
+                    cx="19"
+                    cy="13"
+                    r="1.1"
+                    fill="#D4AF37"
+                  />
+
                   <path
                     d="M19 24 L14.5 28.2 L19 32.4"
                     fill="none"
@@ -1464,6 +1794,7 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   />
+
                   <path
                     d="M29 24 L33.5 28.2 L29 32.4"
                     fill="none"
@@ -1478,135 +1809,197 @@
               <h3>Web Development</h3>
 
               <p>
-                Modern responsive websites built with HTML, CSS, JavaScript and
-                thoughtful user experiences.
+                Fast, responsive, and thoughtful websites that give your
+                audience a clear, polished, and reliable experience.
               </p>
             </article>
+
           </div>
         </div>
       </section>
 
-      <!-- =================================
-             SELECTED WORK
-        ================================= -->
+      <!-- =======================================================
+           SELECTED WORK
+      ======================================================== -->
 
-      <!-- =================================
-     SELECTED WORK
-================================= -->
-
-      <section class="work" id="work">
+      <section
+        class="work"
+        id="work"
+        aria-labelledby="work-title"
+      >
         <div class="container">
-          <div class="section-label">Selected Work</div>
 
-          <h2 class="section-title">Ideas into Reality</h2>
+          <div class="section-label">
+            Selected Work
+          </div>
+
+          <h2
+            class="section-title"
+            id="work-title"
+          >
+            Ideas into reality
+          </h2>
 
           <p class="section-description">
-            Explore selected work across visual identity, web development and
-            music.
+            A selection of creative work across design, technology, and music,
+            each built with intention and shaped around a clear idea.
           </p>
 
           <div class="work-grid">
-            <!-- LOGO DESIGN -->
-            <a href="logos.html" class="work-card">
-              <div class="work-category">Design</div>
 
-              <h3>Logo Design</h3>
+            <!-- LOGO DESIGN -->
+
+            <a
+              href="logos.html"
+              class="work-card"
+              aria-label="Explore logo design work"
+            >
+              <div class="work-category">
+                Design
+              </div>
+
+              <h3>
+                Logo Design
+              </h3>
 
               <p>
-                Minimal and distinctive logo designs created for brands,
-                concepts and digital businesses.
+                Logos that give brands a clear identity, with a focus on
+                simplicity, distinction, and lasting recognition.
               </p>
             </a>
 
             <!-- WEB DEVELOPMENT -->
-            <a href="web.html" class="work-card">
-              <div class="work-category">Technology</div>
 
-              <h3>Web Design & Development</h3>
+            <a
+              href="web.html"
+              class="work-card"
+              aria-label="Explore web design and development work"
+            >
+              <div class="work-category">
+                Technology
+              </div>
+
+              <h3>
+                Web Design &amp; Development
+              </h3>
 
               <p>
-                Modern responsive websites combining thoughtful design, clean
-                code and purposeful digital experiences.
+                Websites designed to look refined, communicate clearly, and
+                provide a smooth experience across devices.
               </p>
             </a>
 
             <!-- MUSIC -->
-            <a href="music.html" class="work-card">
-              <div class="work-category">Music</div>
 
-              <h3>Music & Composition</h3>
+            <a
+              href="music.html"
+              class="work-card"
+              aria-label="Explore music and composition work"
+            >
+              <div class="work-category">
+                Music
+              </div>
+
+              <h3>
+                Music &amp; Composition
+              </h3>
 
               <p>
-                Original compositions and piano works shaped around emotion,
-                atmosphere and cinematic storytelling.
+                Original pieces and performances created to shape atmosphere,
+                emotion, and memorable moments.
               </p>
             </a>
+
           </div>
         </div>
       </section>
 
-      <!-- =================================
-             PHILOSOPHY
-        ================================= -->
+      <!-- =======================================================
+           PHILOSOPHY
+      ======================================================== -->
 
-      <section class="philosophy">
+      <section
+        class="philosophy"
+        aria-labelledby="philosophy-title"
+      >
         <div class="container">
-          <div class="section-label">Philosophy</div>
 
-          <div class="quote">Make it meaningful.<br />Make it memorable.</div>
+          <div class="section-label">
+            Philosophy
+          </div>
+
+          <h2
+            class="quote"
+            id="philosophy-title"
+          >
+            Make it meaningful.<br />
+            Make it memorable.
+          </h2>
+
         </div>
       </section>
 
-      <!-- =================================
-             CONTACT
-        ================================= -->
+      <!-- =======================================================
+           CONTACT
+      ======================================================== -->
 
-      <section class="contact" id="contact">
+      <section
+        class="contact"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
         <div class="container">
-          <div class="contact-box">
-            <div class="section-label">Get In Touch</div>
 
-            <h2>Let's create something meaningful.</h2>
+          <div class="contact-box">
+
+            <div class="section-label">
+              Get In Touch
+            </div>
+
+            <h2 id="contact-title">
+              Let's create something meaningful.
+            </h2>
 
             <p>
-              Interested in music, Logo Design, web development or creative
-              collaboration? I'd love to hear from you.
+              Have an idea for a visual identity, a professional website, or a
+              custom piece of music? Tell me what you're working on, and let's
+              turn the idea into something real.
             </p>
-
-            <!--
-                        CHANGE THIS EMAIL
-                        TO YOUR REAL EMAIL
-                    -->
 
             <a
               href="mailto:mohammadaminzaadeh@gmail.com"
               class="btn btn-primary"
+              aria-label="Send an email to Mohammad Aminzadeh"
             >
               Start a Conversation
             </a>
+
           </div>
         </div>
       </section>
+
     </main>
 
-    <!-- =================================
+    <!-- =========================================================
          FOOTER
-    ================================= -->
+    ========================================================== -->
 
     <footer>
       <div class="container">
+
         <div class="footer-content">
-          <p>© 2026 Mohammad Aminzadeh. All rights reserved.</p>
+
+          <p>
+            © 2026 Mohammad Aminzadeh. All rights reserved.
+          </p>
 
           <div class="socials">
-            <!--
-                        CHANGE # TO YOUR REAL LINKS
-                    -->
 
             <a
-              href="https://www.instagram.com/mohammadaminzaadeh?igsh=eGp0aTlqdW4zMWp6"
+              href="https://www.instagram.com/mohammadaminzaadeh"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Mohammad Aminzadeh on Instagram"
             >
               Instagram
             </a>
@@ -1615,42 +2008,90 @@
               href="https://www.behance.net/mohammaaminzad1"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Mohammad Aminzadeh on Behance"
             >
               Behance
             </a>
 
             <a
-              href="https://github.com/mohammadaminzaadeh"
+              href="https://github.com/MohammadAminzaadeh"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Mohammad Aminzadeh on GitHub"
             >
               GitHub
             </a>
+
           </div>
+
         </div>
       </div>
     </footer>
 
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
     <script>
-      const overlay = document.getElementById("page-transition");
+      (() => {
+        "use strict";
 
-      // فید این صفحه بلافاصله بعد از لود شدن
-      window.addEventListener("DOMContentLoaded", () => {
-        requestAnimationFrame(() => overlay.classList.add("hide"));
-      });
+        const overlay = document.getElementById("page-transition");
 
-      // قبل از رفتن به زبان دیگه، اول پرده فید اوت بشه، بعد بره
-      document.querySelectorAll(".lang-switch a").forEach((link) => {
-        link.addEventListener("click", function (e) {
-          const href = this.getAttribute("href");
-          if (!href || this.classList.contains("active")) return;
-          e.preventDefault();
-          overlay.classList.remove("hide");
-          setTimeout(() => {
-            window.location.href = href;
-          }, 450);
-        });
-      });
+        if (!overlay) return;
+
+        const reduceMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)"
+        ).matches;
+
+        /*
+         * Initial page reveal
+         */
+
+        const revealPage = () => {
+          requestAnimationFrame(() => {
+            overlay.classList.add("hide");
+          });
+        };
+
+        if (document.readyState === "loading") {
+          document.addEventListener(
+            "DOMContentLoaded",
+            revealPage,
+            { once: true }
+          );
+        } else {
+          revealPage();
+        }
+
+        /*
+         * Language transition
+         */
+
+        document
+          .querySelectorAll(".lang-switch a")
+          .forEach((link) => {
+            link.addEventListener("click", (event) => {
+              const href = link.getAttribute("href");
+
+              if (
+                !href ||
+                link.classList.contains("active") ||
+                reduceMotion
+              ) {
+                return;
+              }
+
+              event.preventDefault();
+
+              overlay.classList.remove("hide");
+
+              window.setTimeout(() => {
+                window.location.href = href;
+              }, 450);
+            });
+          });
+      })();
     </script>
   </body>
-</html>
+  </html>
