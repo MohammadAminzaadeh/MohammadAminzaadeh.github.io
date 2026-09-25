@@ -170,7 +170,7 @@
         --border: rgba(255, 255, 255, 0.09);
         --border-strong: rgba(255, 255, 255, 0.18);
         --gold-border: rgba(212, 175, 55, 0.3);
-        --gold-border-strong: rgba(212, 175, 55, 0.42);
+        --gold-border-strong: rgba(212, 175, 55, 0.55);
 
         --max-width: 1180px;
 
@@ -807,31 +807,37 @@
         position: relative;
 
         display: flex;
+
         flex-direction: column;
+
+        background: var(--black-card);
+
+        border: 1px solid var(--border);
+
+        padding: 36px 30px 32px;
 
         min-height: 650px;
 
-        padding: 30px;
-
-        background: #111111;
-
-        border: 1px solid rgba(212, 175, 55, 0.14);
-        border-radius: 2px;
+        overflow: hidden;
 
         transition:
-          transform var(--transition),
-          border-color var(--transition),
-          background var(--transition);
+          transform 0.35s ease,
+          border-color 0.35s ease,
+          background 0.35s ease;
       }
 
       .service-card:hover {
         transform: translateY(-7px);
 
-        border-color: var(--gold-border-strong);
+        border-color: var(--gold-border);
       }
 
       .service-card-featured {
-        border-color: rgba(212, 175, 55, 0.38);
+        border-color: var(--gold-border-strong);
+      }
+
+      .service-card-featured:hover {
+        border-color: var(--gold);
       }
 
       /* =========================================================
@@ -867,6 +873,7 @@
       }
 
       .service-badge {
+        display: inline-block;
         padding: 6px 11px;
 
         border: 1px solid var(--gold-border);
@@ -1809,11 +1816,10 @@
             <article class="service-card service-card-featured">
               <div class="service-top">
                 <span class="service-number"> 02 </span>
+                <div class="service-badge">Most Popular</div>
               </div>
 
               <div class="service-content">
-                <div class="service-badge">Most Popular</div>
-
                 <h3 class="service-name">Brand Starter</h3>
 
                 <p class="service-description">
