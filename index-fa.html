@@ -53,7 +53,9 @@
          TITLE
     =================================================== -->
 
-    <title>محمد امین‌زاده | طراح لوگو، توسعه‌دهنده وب، پیانیست و آهنگساز</title>
+    <title>
+      محمد امین‌زاده | طراح لوگو، توسعه‌دهنده وب، پیانیست و آهنگساز
+    </title>
 
     <!-- ==================================================
          OPEN GRAPH
@@ -120,13 +122,39 @@
 
     <!-- ==================================================
          FONT
+         Estedad v7.3
+         Static WOFF2 files
     =================================================== -->
 
     <style>
       @font-face {
-        font-family: "Arad";
-        src: url("Arad-Medium.woff2") format("woff2");
+        font-family: "Estedad";
+        src: url("fonts/Estedad-Regular.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Estedad";
+        src: url("fonts/Estedad-Medium.woff2") format("woff2");
         font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Estedad";
+        src: url("fonts/Estedad-SemiBold.woff2") format("woff2");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Estedad";
+        src: url("fonts/Estedad-Bold.woff2") format("woff2");
+        font-weight: 700;
         font-style: normal;
         font-display: swap;
       }
@@ -153,7 +181,7 @@
 
         --max-width: 1180px;
 
-        --font-fa: "Arad", Tahoma, Arial, sans-serif;
+        --font-fa: "Estedad", Tahoma, Arial, sans-serif;
       }
 
       /* ==================================================
@@ -837,7 +865,7 @@
       .service-price-value {
         color: var(--gold);
 
-        font-family: Arad;
+        font-family: var(--font-fa);
 
         font-size: 31px;
 
@@ -1448,7 +1476,12 @@
         "alternateName": "Mohammad Aminzadeh",
         "url": "https://mohammadaminzaadeh.github.io/index-fa.html",
         "image": "https://mohammadaminzaadeh.github.io/images/mohammad-aminzaadeh-1.jpg",
-        "jobTitle": ["Web Developer", "Logo Designer", "Pianist", "Composer"],
+        "jobTitle": [
+          "Web Developer",
+          "Logo Designer",
+          "Pianist",
+          "Composer"
+        ],
         "description": "محمد امین‌زاده، پیانیست، آهنگساز، طراح لوگو و توسعه‌دهنده وب در مشهد، ایران.",
         "email": "mailto:mohammadaminzaadeh@gmail.com",
         "inLanguage": "fa-IR",
@@ -1465,6 +1498,7 @@
       }
     </script>
   </head>
+
   <body>
     <!-- ==================================================
          PAGE TRANSITION
@@ -1472,7 +1506,9 @@
 
     <div id="page-transition" aria-hidden="true"></div>
 
-    <a href="#home" class="visually-hidden-skip"> رفتن به محتوای اصلی </a>
+    <a href="#home" class="visually-hidden-skip">
+      رفتن به محتوای اصلی
+    </a>
 
     <!-- ==================================================
          HEADER
@@ -1487,28 +1523,36 @@
 
           <ul class="nav-links">
             <li>
-              <a href="#about"> درباره من </a>
+              <a href="#about">درباره من</a>
             </li>
 
             <li>
-              <a href="#services"> خدمات </a>
+              <a href="#services">خدمات</a>
             </li>
 
             <li>
-              <a href="#work"> نمونه‌کارها </a>
+              <a href="#work">نمونه‌کارها</a>
             </li>
 
             <li>
-              <a href="#contact" class="nav-button"> بیایید در ارتباط باشیم </a>
+              <a href="#contact" class="nav-button">
+                بیایید در ارتباط باشیم
+              </a>
             </li>
           </ul>
 
           <div class="lang-switch" aria-label="انتخاب زبان">
-            <a href="index.html"> EN </a>
+            <a href="index.html">EN</a>
 
-            <span class="divider" aria-hidden="true"> / </span>
+            <span class="divider" aria-hidden="true">/</span>
 
-            <a href="index-fa.html" class="active" aria-current="page"> FA </a>
+            <a
+              href="index-fa.html"
+              class="active"
+              aria-current="page"
+            >
+              FA
+            </a>
           </div>
         </nav>
       </div>
@@ -1523,7 +1567,11 @@
            HERO
       =================================================== -->
 
-      <section class="hero" id="home" aria-labelledby="hero-title">
+      <section
+        class="hero"
+        id="home"
+        aria-labelledby="hero-title"
+      >
         <div class="container">
           <div class="hero-grid">
             <div class="hero-content">
@@ -1540,7 +1588,9 @@
               </p>
 
               <div class="hero-buttons">
-                <a href="#work" class="btn btn-primary"> مشاهده نمونه‌کارها </a>
+                <a href="#work" class="btn btn-primary">
+                  مشاهده نمونه‌کارها
+                </a>
 
                 <a href="#contact" class="btn btn-outline">
                   بیایید در ارتباط باشیم
@@ -1552,7 +1602,7 @@
               <div class="portrait-frame">
                 <div class="portrait-inner">
                   <img
-                    src="images/mohammad-aminzadeh-1.jpg"
+                    src="images/mohammad-aminzaadeh-1.jpg"
                     alt="پرتره محمد امین‌زاده"
                     class="portrait-image"
                     width="600"
@@ -1561,12 +1611,15 @@
                     fetchpriority="high"
                   />
 
-                  <div class="portrait-overlay" aria-hidden="true"></div>
+                  <div
+                    class="portrait-overlay"
+                    aria-hidden="true"
+                  ></div>
 
                   <div class="portrait-text">
-                    <strong> محمد امین‌زاده </strong>
+                    <strong>محمد امین‌زاده</strong>
 
-                    <span> موسیقی‌دان · طراح </span>
+                    <span>موسیقی‌دان · طراح</span>
                   </div>
                 </div>
               </div>
@@ -1579,12 +1632,16 @@
            ABOUT
       =================================================== -->
 
-      <section class="about" id="about" aria-labelledby="about-title">
+      <section
+        class="about"
+        id="about"
+        aria-labelledby="about-title"
+      >
         <div class="container">
           <div class="about-grid">
             <div class="about-image">
               <img
-                src="images/mohammad-aminzadeh-1.jpg"
+                src="images/mohammad-aminzaadeh-1.jpg"
                 alt="محمد امین‌زاده"
                 width="600"
                 height="750"
@@ -1600,8 +1657,8 @@
               </h2>
 
               <p>
-                محمد امین‌زاده هستم؛ کسی که دوست دارد کارهایی بسازد که واقعاً حس
-                شوند؛ چه یک ملودی، چه یک لوگو، چه یک وب‌سایت.
+                محمد امین‌زاده هستم؛ کسی که دوست دارد کارهایی بسازد که واقعاً
+                حس شوند؛ چه یک ملودی، چه یک لوگو، چه یک وب‌سایت.
               </p>
 
               <p>
@@ -1615,7 +1672,9 @@
                 مخاطب‌هایتان واقعاً حسش کنند.
               </p>
 
-              <div class="signature">محمد امین‌زاده</div>
+              <div class="signature">
+                محمد امین‌زاده
+              </div>
             </div>
           </div>
         </div>
@@ -1625,7 +1684,10 @@
            SERVICES
       =================================================== -->
 
-      <section id="services" aria-labelledby="services-title">
+      <section
+        id="services"
+        aria-labelledby="services-title"
+      >
         <div class="container">
           <div class="section-label">خدمات</div>
 
@@ -1636,8 +1698,8 @@
           </h2>
 
           <p class="section-description">
-            از هویت بصری تا توسعه وب، هر پروژه با دقت، وضوح و نگاه هدفمند طراحی
-            و اجرا می‌شود؛ متناسب با شخصیت و اهداف برند شما.
+            از هویت بصری تا توسعه وب، هر پروژه با دقت، وضوح و نگاه هدفمند
+            طراحی و اجرا می‌شود؛ متناسب با شخصیت و اهداف برند شما.
           </p>
 
           <div class="services-grid">
@@ -1647,7 +1709,7 @@
 
             <article class="service-card">
               <div class="service-top">
-                <span class="service-number"> 01 </span>
+                <span class="service-number">01</span>
               </div>
 
               <h3>لوگوی پایه</h3>
@@ -1658,9 +1720,13 @@
               </p>
 
               <div class="service-price">
-                <span class="service-price-label"> شروع از </span>
+                <span class="service-price-label">
+                  شروع از
+                </span>
 
-                <span class="service-price-value"> ۳,۵۰۰,۰۰۰ تومان </span>
+                <span class="service-price-value">
+                  ۳,۵۰۰,۰۰۰ تومان
+                </span>
               </div>
 
               <ul class="service-features">
@@ -1684,7 +1750,9 @@
               </ul>
 
               <div class="service-meta">
-                <span class="service-duration"> ۳ تا ۵ روز کاری </span>
+                <span class="service-duration">
+                  ۳ تا ۵ روز کاری
+                </span>
 
                 <a href="#contact" class="service-link">
                   شروع پروژه
@@ -1697,24 +1765,32 @@
                  BRAND STARTER
             =================================================== -->
 
-            <article class="service-card service-card-featured">
+            <article
+              class="service-card service-card-featured"
+            >
               <div class="service-top">
-                <span class="service-number"> 02 </span>
+                <span class="service-number">02</span>
 
-                <span class="service-badge"> انتخاب محبوب </span>
+                <span class="service-badge">
+                  انتخاب محبوب
+                </span>
               </div>
 
               <h3>شروع هویت برند</h3>
 
               <p class="service-description">
-                یک پایه‌ی منسجم برای برندهایی که به چیزی فراتر از یک لوگو نیاز
-                دارند؛ ترکیبی از هویت، رنگ، تایپوگرافی و کاربردهای اصلی.
+                یک پایه‌ی منسجم برای برندهایی که به چیزی فراتر از یک لوگو
+                نیاز دارند؛ ترکیبی از هویت، رنگ، تایپوگرافی و کاربردهای اصلی.
               </p>
 
               <div class="service-price">
-                <span class="service-price-label"> شروع از </span>
+                <span class="service-price-label">
+                  شروع از
+                </span>
 
-                <span class="service-price-value"> ۸,۰۰۰,۰۰۰ تومان </span>
+                <span class="service-price-value">
+                  ۸,۰۰۰,۰۰۰ تومان
+                </span>
               </div>
 
               <ul class="service-features">
@@ -1744,7 +1820,9 @@
               </ul>
 
               <div class="service-meta">
-                <span class="service-duration"> ۵ تا ۷ روز کاری </span>
+                <span class="service-duration">
+                  ۵ تا ۷ روز کاری
+                </span>
 
                 <a href="#contact" class="service-link">
                   شروع پروژه
@@ -1759,7 +1837,7 @@
 
             <article class="service-card">
               <div class="service-top">
-                <span class="service-number"> 03 </span>
+                <span class="service-number">03</span>
               </div>
 
               <h3>راه‌اندازی وب‌سایت</h3>
@@ -1770,9 +1848,13 @@
               </p>
 
               <div class="service-price">
-                <span class="service-price-label"> شروع از </span>
+                <span class="service-price-label">
+                  شروع از
+                </span>
 
-                <span class="service-price-value"> ۱۲,۰۰۰,۰۰۰ تومان </span>
+                <span class="service-price-value">
+                  ۱۲,۰۰۰,۰۰۰ تومان
+                </span>
               </div>
 
               <ul class="service-features">
@@ -1804,7 +1886,9 @@
               </ul>
 
               <div class="service-meta">
-                <span class="service-duration"> ۵ تا ۱۰ روز کاری </span>
+                <span class="service-duration">
+                  ۵ تا ۱۰ روز کاری
+                </span>
 
                 <a href="#contact" class="service-link">
                   شروع پروژه
@@ -1817,8 +1901,8 @@
           <div class="services-note">
             <p>
               هر پروژه بر اساس دامنه، نیازها و اهداف آن به‌صورت جداگانه بررسی
-              می‌شود. برای پروژه‌های سفارشی یا نیازهایی که خارج از این پکیج‌ها
-              هستند، می‌توانید مستقیماً با من در ارتباط باشید.
+              می‌شود. برای پروژه‌های سفارشی یا نیازهایی که خارج از این
+              پکیج‌ها هستند، می‌توانید مستقیماً با من در ارتباط باشید.
             </p>
 
             <a href="#contact">
@@ -1833,15 +1917,23 @@
            WORK
       =================================================== -->
 
-      <section class="work" id="work" aria-labelledby="work-title">
+      <section
+        class="work"
+        id="work"
+        aria-labelledby="work-title"
+      >
         <div class="container">
-          <div class="section-label">نمونه‌کارهای منتخب</div>
+          <div class="section-label">
+            نمونه‌کارهای منتخب
+          </div>
 
-          <h2 class="section-title" id="work-title">تبدیل ایده‌ها به واقعیت</h2>
+          <h2 class="section-title" id="work-title">
+            تبدیل ایده‌ها به واقعیت
+          </h2>
 
           <p class="section-description">
-            مجموعه‌ای از آثار منتخب در طراحی لوگو، توسعه وب و موسیقی؛ بخشی از
-            مسیر خلاقانه‌ای که در هر پروژه ادامه پیدا می‌کند.
+            مجموعه‌ای از آثار منتخب در طراحی لوگو، توسعه وب و موسیقی؛ بخشی
+            از مسیر خلاقانه‌ای که در هر پروژه ادامه پیدا می‌کند.
           </p>
 
           <div class="work-grid">
@@ -1852,7 +1944,9 @@
               class="work-card"
               aria-label="مشاهده نمونه‌کارهای طراحی لوگو"
             >
-              <div class="work-category">طراحی</div>
+              <div class="work-category">
+                طراحی
+              </div>
 
               <h3>طراحی لوگو</h3>
 
@@ -1869,7 +1963,9 @@
               class="work-card"
               aria-label="مشاهده نمونه‌کارهای طراحی و توسعه وب"
             >
-              <div class="work-category">تکنولوژی</div>
+              <div class="work-category">
+                تکنولوژی
+              </div>
 
               <h3>طراحی و توسعه وب</h3>
 
@@ -1886,13 +1982,15 @@
               class="work-card"
               aria-label="مشاهده نمونه‌کارهای موسیقی و آهنگسازی"
             >
-              <div class="work-category">موسیقی</div>
+              <div class="work-category">
+                موسیقی
+              </div>
 
               <h3>موسیقی و آهنگسازی</h3>
 
               <p>
-                قطعاتی که فضای دقیق یک پروژه را می‌سازند؛ از موسیقی برای ویدیو و
-                محتوا تا قطعات اختصاصی و شخصی.
+                قطعاتی که فضای دقیق یک پروژه را می‌سازند؛ از موسیقی برای
+                ویدیو و محتوا تا قطعات اختصاصی و شخصی.
               </p>
             </a>
           </div>
@@ -1903,9 +2001,14 @@
            PHILOSOPHY
       =================================================== -->
 
-      <section class="philosophy" aria-labelledby="philosophy-title">
+      <section
+        class="philosophy"
+        aria-labelledby="philosophy-title"
+      >
         <div class="container">
-          <div class="section-label">فلسفه کاری</div>
+          <div class="section-label">
+            فلسفه کاری
+          </div>
 
           <div class="quote" id="philosophy-title">
             معنادارش کن.
@@ -1919,17 +2022,25 @@
            CONTACT
       =================================================== -->
 
-      <section class="contact" id="contact" aria-labelledby="contact-title">
+      <section
+        class="contact"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
         <div class="container">
           <div class="contact-box">
-            <div class="section-label">در تماس باشید</div>
+            <div class="section-label">
+              در تماس باشید
+            </div>
 
-            <h2 id="contact-title">بیایید چیزی معنادار بسازیم.</h2>
+            <h2 id="contact-title">
+              بیایید چیزی معنادار بسازیم.
+            </h2>
 
             <p>
               دنبال یک هویت بصری تازه، وب‌سایتی حرفه‌ای یا یک قطعه‌ی موسیقی
-              اختصاصی هستید؟ بگویید چه چیزی در ذهن دارید؛ خوشحال می‌شوم کمک کنم
-              آن را به واقعیت تبدیل کنیم.
+              اختصاصی هستید؟ بگویید چه چیزی در ذهن دارید؛ خوشحال می‌شوم کمک
+              کنم آن را به واقعیت تبدیل کنیم.
             </p>
 
             <a
@@ -1950,7 +2061,9 @@
     <footer>
       <div class="container">
         <div class="footer-content">
-          <p>© ۲۰۲۶ محمد امین‌زاده. تمامی حقوق محفوظ است.</p>
+          <p>
+            © ۲۰۲۶ محمد امین‌زاده. تمامی حقوق محفوظ است.
+          </p>
 
           <div class="socials">
             <a
@@ -1990,34 +2103,48 @@
 
     <script>
       (() => {
-        const overlay = document.getElementById("page-transition");
+        const overlay = document.getElementById(
+          "page-transition"
+        );
 
         if (!overlay) return;
 
-        window.addEventListener("DOMContentLoaded", () => {
-          requestAnimationFrame(() => {
-            overlay.classList.add("hide");
+        window.addEventListener(
+          "DOMContentLoaded",
+          () => {
+            requestAnimationFrame(() => {
+              overlay.classList.add("hide");
+            });
+          }
+        );
+
+        document
+          .querySelectorAll(".lang-switch a")
+          .forEach((link) => {
+            link.addEventListener(
+              "click",
+              function (event) {
+                const href =
+                  this.getAttribute("href");
+
+                if (
+                  !href ||
+                  this.classList.contains("active")
+                ) {
+                  return;
+                }
+
+                event.preventDefault();
+
+                overlay.classList.remove("hide");
+
+                window.setTimeout(() => {
+                  window.location.href = href;
+                }, 450);
+              }
+            );
           });
-        });
-
-        document.querySelectorAll(".lang-switch a").forEach((link) => {
-          link.addEventListener("click", function (event) {
-            const href = this.getAttribute("href");
-
-            if (!href || this.classList.contains("active")) {
-              return;
-            }
-
-            event.preventDefault();
-
-            overlay.classList.remove("hide");
-
-            window.setTimeout(() => {
-              window.location.href = href;
-            }, 450);
-          });
-        });
       })();
     </script>
   </body>
-</html>
+  </html>
