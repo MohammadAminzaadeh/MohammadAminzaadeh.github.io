@@ -1,8 +1,9 @@
 <!doctype html>
-<html lang="en">
+
+<html lang="fa" dir="rtl">
   <head>
     <!-- =========================================================
-         BASIC DOCUMENT SETTINGS
+         تنظیمات پایه سند
     ========================================================== -->
 
     <meta charset="UTF-8" />
@@ -14,12 +15,12 @@
 
     <meta
       name="description"
-      content="Mohammad Aminzadeh is a logo designer and web developer creating distinctive visual identities, refined websites, and original music designed to make ideas meaningful and memorable."
+      content="محمد امین‌زاده، طراح لوگو و توسعه‌دهنده وب، هویت‌های بصری متمایز، وب‌سایت‌های حرفه‌ای و موسیقی اصیل خلق می‌کند؛ با هدف تبدیل ایده‌ها به تجربه‌هایی معنادار و ماندگار."
     />
 
     <meta
       name="author"
-      content="Mohammad Aminzadeh"
+      content="محمد امین‌زاده"
     />
 
     <meta
@@ -48,7 +49,7 @@
 
     <link
       rel="canonical"
-      href="https://mohammadaminzaadeh.github.io/"
+      href="https://mohammadaminzaadeh.github.io/index-fa.html"
     />
 
     <!-- =========================================================
@@ -78,7 +79,7 @@
     ========================================================== -->
 
     <title>
-      Mohammad Aminzadeh | Logo Designer, Web Developer &amp; Pianist
+      محمد امین‌زاده | طراح لوگو، توسعه‌دهنده وب و پیانیست
     </title>
 
     <!-- =========================================================
@@ -92,22 +93,22 @@
 
     <meta
       property="og:url"
-      content="https://mohammadaminzaadeh.github.io/"
+      content="https://mohammadaminzaadeh.github.io/index-fa.html"
     />
 
     <meta
       property="og:title"
-      content="Mohammad Aminzadeh | Logo Designer, Web Developer &amp; Pianist"
+      content="محمد امین‌زاده | طراح لوگو، توسعه‌دهنده وب و پیانیست"
     />
 
     <meta
       property="og:description"
-      content="Distinctive visual identities, refined websites, and original music designed to make ideas meaningful and memorable."
+      content="هویت‌های بصری متمایز، وب‌سایت‌های حرفه‌ای و موسیقی اصیل، با هدف تبدیل ایده‌ها به تجربه‌هایی معنادار و ماندگار."
     />
 
     <meta
       property="og:image"
-      content="https://mohammadaminzaadeh.github.io/images/mohammad-aminzadeh-1.jpg"
+      content="https://mohammadaminzaadeh.github.io/images/mohammad-aminzaadeh-1.jpg"
     />
 
     <meta
@@ -127,22 +128,22 @@
 
     <meta
       property="og:image:alt"
-      content="Portrait of Mohammad Aminzadeh"
+      content="پرتره محمد امین‌زاده"
     />
 
     <meta
       property="og:site_name"
-      content="Mohammad Aminzadeh"
+      content="محمد امین‌زاده"
     />
 
     <meta
       property="og:locale"
-      content="en_US"
+      content="fa_IR"
     />
 
     <meta
       property="og:locale:alternate"
-      content="fa_IR"
+      content="en_US"
     />
 
     <!-- =========================================================
@@ -156,22 +157,22 @@
 
     <meta
       name="twitter:title"
-      content="Mohammad Aminzadeh | Logo Designer, Web Developer &amp; Pianist"
+      content="محمد امین‌زاده | طراح لوگو، توسعه‌دهنده وب و پیانیست"
     />
 
     <meta
       name="twitter:description"
-      content="Distinctive visual identities, refined websites, and original music designed to make ideas meaningful and memorable."
+      content="هویت‌های بصری متمایز، وب‌سایت‌های حرفه‌ای و موسیقی اصیل، با هدف تبدیل ایده‌ها به تجربه‌هایی معنادار و ماندگار."
     />
 
     <meta
       name="twitter:image"
-      content="https://mohammadaminzaadeh.github.io/images/mohammad-aminzadeh-1.jpg"
+      content="https://mohammadaminzaadeh.github.io/images/mohammad-aminzaadeh-1.jpg"
     />
 
     <meta
       name="twitter:image:alt"
-      content="Portrait of Mohammad Aminzadeh"
+      content="پرتره محمد امین‌زاده"
     />
 
     <!-- =========================================================
@@ -192,7 +193,7 @@
     <link
       rel="preload"
       as="image"
-      href="images/mohammad-aminzadeh-1.jpg"
+      href="images/mohammad-aminzaadeh-1.jpg"
       fetchpriority="high"
     />
 
@@ -287,7 +288,12 @@
         background: var(--black);
         color: var(--white);
 
-        font-family: "Inter", sans-serif;
+        font-family:
+          "Arad",
+          "Tahoma",
+          "Arial",
+          sans-serif;
+
         line-height: 1.6;
 
         overflow-x: hidden;
@@ -334,7 +340,7 @@
       .visually-hidden-skip {
         position: absolute;
         top: 12px;
-        left: -9999px;
+        right: -9999px;
 
         width: auto;
         height: auto;
@@ -350,7 +356,7 @@
       }
 
       .visually-hidden-skip:focus {
-        left: 12px;
+        right: 12px;
       }
 
       :focus-visible {
@@ -416,7 +422,7 @@
       header {
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
 
         width: 100%;
 
@@ -463,14 +469,14 @@
 
       .nav-links {
         position: absolute;
-        left: 50%;
+        right: 50%;
 
         display: flex;
         align-items: center;
 
         gap: 30px;
 
-        transform: translateX(-50%);
+        transform: translateX(50%);
 
         white-space: nowrap;
       }
@@ -516,8 +522,11 @@
 
         color: var(--gray-dark);
 
+        font-family: "Inter", sans-serif;
         font-size: 13px;
         white-space: nowrap;
+
+        direction: ltr;
       }
 
       .lang-switch a {
@@ -706,7 +715,7 @@
 
       .portrait-text {
         position: absolute;
-        left: 25px;
+        right: 25px;
         bottom: 25px;
 
         z-index: 2;
@@ -949,6 +958,8 @@
         font-family: "Playfair Display", serif;
         font-size: 0.9rem;
         letter-spacing: 0.08em;
+
+        direction: ltr;
       }
 
       .service-icon {
@@ -991,6 +1002,7 @@
         border: 1px solid rgba(212, 175, 55, 0.3);
         border-radius: 999px;
 
+        font-family: "Arad", "Tahoma", "Arial", sans-serif;
         font-size: 0.68rem;
         font-weight: 500;
         letter-spacing: 0.02em;
@@ -1025,25 +1037,46 @@
       .service-price {
         display: flex;
         align-items: baseline;
+        justify-content: flex-start;
 
         gap: 9px;
 
         margin: 28px 0;
+
+        direction: rtl;
+        text-align: right;
       }
 
       .service-price-label {
         color: rgba(255, 255, 255, 0.42);
 
+        font-family:
+          "Arad",
+          "Tahoma",
+          "Arial",
+          sans-serif;
+
         font-size: 0.72rem;
+
+        direction: rtl;
+        white-space: nowrap;
       }
 
       .service-price strong {
         color: var(--gold);
 
-        font-family: "Playfair Display", serif;
+        font-family:
+          "Inter",
+          "Tahoma",
+          "Arial",
+          sans-serif;
+
         font-size: 2rem;
-        font-weight: 500;
-        letter-spacing: -0.02em;
+        font-weight: 600;
+        letter-spacing: 0;
+
+        direction: rtl;
+        white-space: nowrap;
       }
 
       /* =========================================================
@@ -1065,7 +1098,7 @@
       .service-features li {
         position: relative;
 
-        padding-left: 17px;
+        padding-right: 17px;
 
         color: rgba(255, 255, 255, 0.68);
 
@@ -1079,7 +1112,7 @@
         position: absolute;
 
         top: 0.72em;
-        left: 0;
+        right: 0;
 
         width: 4px;
         height: 4px;
@@ -1142,7 +1175,7 @@
       }
 
       .service-link:hover span {
-        transform: translate(2px, -2px);
+        transform: translate(-2px, -2px);
       }
 
       /* =========================================================
@@ -1372,11 +1405,14 @@
         align-items: center;
 
         gap: 20px;
+
+        direction: ltr;
       }
 
       .socials a {
         color: #888888;
 
+        font-family: "Inter", sans-serif;
         font-size: 13px;
 
         transition: color var(--transition-fast);
@@ -1520,7 +1556,7 @@
         }
 
         .portrait-text {
-          left: 18px;
+          right: 18px;
           bottom: 18px;
         }
 
@@ -1637,27 +1673,27 @@
       {
         "@context": "https://schema.org",
         "@type": "Person",
-        "name": "Mohammad Aminzadeh",
-        "alternateName": "mohammadaminzaadeh",
-        "url": "https://mohammadaminzaadeh.github.io/",
-        "image": "https://mohammadaminzaadeh.github.io/images/mohammad-aminzadeh-1.jpg",
-        "description": "Mohammad Aminzadeh is a logo designer and web developer creating distinctive visual identities, refined websites, and original music designed to make ideas meaningful and memorable.",
-        "jobTitle": "Logo Designer, Web Developer, Pianist and Composer",
+        "name": "محمد امین‌زاده",
+        "alternateName": "Mohammad Aminzadeh",
+        "url": "https://mohammadaminzaadeh.github.io/index-fa.html",
+        "image": "https://mohammadaminzaadeh.github.io/images/mohammad-aminzaadeh-1.jpg",
+        "description": "محمد امین‌زاده، طراح لوگو و توسعه‌دهنده وب، هویت‌های بصری متمایز، وب‌سایت‌های حرفه‌ای و موسیقی اصیل خلق می‌کند.",
+        "jobTitle": "طراح لوگو، توسعه‌دهنده وب، پیانیست و آهنگساز",
         "email": "mailto:mohammadaminzaadeh@gmail.com",
-        "inLanguage": "en-US",
+        "inLanguage": "fa-IR",
         "sameAs": [
           "https://www.instagram.com/mohammadaminzaadeh",
           "https://www.behance.net/mohammaaminzad1",
           "https://github.com/MohammadAminzaadeh"
         ],
         "knowsAbout": [
-          "Logo Design",
-          "Visual Identity",
-          "Brand Identity",
-          "Web Design",
-          "Web Development",
-          "Piano",
-          "Music Composition"
+          "طراحی لوگو",
+          "هویت بصری",
+          "هویت برند",
+          "طراحی وب",
+          "توسعه وب",
+          "پیانو",
+          "آهنگسازی"
         ]
       }
     </script>
@@ -1681,7 +1717,7 @@
       href="#home"
       class="visually-hidden-skip"
     >
-      Skip to content
+      پرش به محتوای اصلی
     </a>
 
     <!-- =========================================================
@@ -1690,14 +1726,14 @@
 
     <header>
       <div class="container">
-        <nav aria-label="Main navigation">
+        <nav aria-label="ناوبری اصلی">
 
           <a
             href="#home"
             class="logo"
-            aria-label="Mohammad Aminzadeh, home"
+            aria-label="محمد امین‌زاده، صفحه اصلی"
           >
-            Mohammad <span>Aminzadeh</span>
+            محمد <span>امین‌زاده</span>
           </a>
 
           <div class="nav-right">
@@ -1706,19 +1742,19 @@
 
               <li>
                 <a href="#about">
-                  About
+                  درباره من
                 </a>
               </li>
 
               <li>
                 <a href="#services">
-                  Services
+                  خدمات
                 </a>
               </li>
 
               <li>
                 <a href="#work">
-                  Work
+                  نمونه‌کارها
                 </a>
               </li>
 
@@ -1727,7 +1763,7 @@
                   href="#contact"
                   class="nav-button"
                 >
-                  Let's Connect
+                  ارتباط با من
                 </a>
               </li>
 
@@ -1735,13 +1771,9 @@
 
             <div
               class="lang-switch"
-              aria-label="Language selection"
+              aria-label="انتخاب زبان"
             >
-              <a
-                href="index.html"
-                class="active"
-                aria-current="page"
-              >
+              <a href="index.html">
                 EN
               </a>
 
@@ -1752,7 +1784,11 @@
                 /
               </span>
 
-              <a href="index-fa.html">
+              <a
+                href="index-fa.html"
+                class="active"
+                aria-current="page"
+              >
                 FA
               </a>
             </div>
@@ -1784,18 +1820,18 @@
             <div class="hero-content">
 
               <div class="hero-small">
-                Pianist &amp; Composer · Web Developer &amp; Logo Designer
+                پیانیست و آهنگساز · توسعه‌دهنده وب و طراح لوگو
               </div>
 
               <h1 id="hero-title">
-                Mohammad<br />
-                Aminzadeh
+                محمد<br />
+                امین‌زاده
               </h1>
 
               <p class="hero-description">
-                Distinctive visual identities, polished websites, and music
-                with meaning, created around your vision and designed to leave
-                a lasting impression.
+                هویت‌های بصری متمایز، وب‌سایت‌های حرفه‌ای و موسیقی
+                معنادار، با نگاهی دقیق به ایده، شخصیت و هدف شما خلق می‌شوند
+                تا اثری ماندگار بر جای بگذارند.
               </p>
 
               <div class="hero-buttons">
@@ -1804,14 +1840,14 @@
                   href="#work"
                   class="btn btn-primary"
                 >
-                  Explore My Work
+                  مشاهده نمونه‌کارها
                 </a>
 
                 <a
                   href="#contact"
                   class="btn btn-outline"
                 >
-                  Let's Connect
+                  ارتباط با من
                 </a>
 
               </div>
@@ -1825,8 +1861,8 @@
                 <div class="portrait-inner">
 
                   <img
-                    src="images/mohammad-aminzadeh-1.jpg"
-                    alt="Portrait of Mohammad Aminzadeh"
+                    src="images/mohammad-aminzaadeh-1.jpg"
+                    alt="پرتره محمد امین‌زاده"
                     class="portrait-image"
                     width="600"
                     height="750"
@@ -1842,11 +1878,11 @@
                   <div class="portrait-text">
 
                     <strong>
-                      Mohammad Aminzadeh
+                      محمد امین‌زاده
                     </strong>
 
                     <span>
-                      Musician · Designer
+                      موسیقی · طراحی
                     </span>
 
                   </div>
@@ -1878,8 +1914,8 @@
             <div class="about-image">
 
               <img
-                src="images/mohammad-aminzadeh-1.jpg"
-                alt="Mohammad Aminzadeh"
+                src="images/mohammad-aminzaadeh-1.jpg"
+                alt="محمد امین‌زاده"
                 width="600"
                 height="750"
                 loading="lazy"
@@ -1890,37 +1926,38 @@
             <div class="about-content">
 
               <div class="section-label">
-                About Me
+                درباره من
               </div>
 
               <h2
                 class="section-title"
                 id="about-title"
               >
-                Creating work with purpose
+                خلق با هدف و معنا
               </h2>
 
               <p>
-                Good work should do more than look good. It should communicate,
-                connect, and stay memorable. That's the idea behind everything
-                I create, from visual identities and websites to music.
+                یک اثر خوب نباید فقط زیبا به نظر برسد. باید ارتباط برقرار
+                کند، معنا داشته باشد و در ذهن بماند. این نگاه پایه تمام
+                چیزهایی است که خلق می‌کنم، از هویت بصری و وب‌سایت گرفته تا
+                موسیقی.
               </p>
 
               <p>
-                I focus on turning ideas into clear, thoughtful experiences
-                that feel authentic to the people and projects behind them.
-                The process is simple, intentional, and always centered around
-                the result.
+                تمرکز من بر تبدیل ایده‌ها به تجربه‌هایی روشن، فکرشده و
+                اصیل است؛ تجربه‌هایی که با شخصیت پروژه و افرادی که پشت آن
+                قرار دارند هماهنگ باشند. فرآیند کار دقیق، هدفمند و همیشه
+                متمرکز بر نتیجه نهایی است.
               </p>
 
               <p>
-                Whether the goal is a stronger identity, a better digital
-                presence, or a meaningful piece of music, every detail has
-                a purpose.
+                چه هدف شما ساختن هویتی قدرتمندتر باشد، چه ایجاد حضوری
+                حرفه‌ای در فضای دیجیتال یا خلق قطعه‌ای موسیقایی، هر جزئی
+                باید دلیلی برای حضور داشته باشد.
               </p>
 
               <div class="signature">
-                Mohammad Aminzadeh
+                محمد امین‌زاده
               </div>
 
             </div>
@@ -1944,21 +1981,21 @@
           <div class="services-header">
 
             <span class="services-eyebrow">
-              Services
+              خدمات
             </span>
 
             <h2
               class="services-title"
               id="services-title"
             >
-              Design that builds
-              <span>a lasting presence</span>
+              طراحی برای ساختن
+              <span>حضوری ماندگار</span>
             </h2>
 
             <p class="services-intro">
-              From visual identity to websites, every project is crafted with
-              a precise, minimal, and purpose-driven approach tailored to your
-              brand, goals, and personality.
+              از هویت بصری تا طراحی و توسعه وب، هر پروژه با رویکردی دقیق،
+              مینیمال و هدفمند شکل می‌گیرد تا با برند، اهداف و شخصیت شما
+              هماهنگ باشد.
             </p>
 
           </div>
@@ -2004,22 +2041,22 @@
               <div class="service-content">
 
                 <h3 class="service-name">
-                  Essential Logo
+                  لوگوی پایه
                 </h3>
 
                 <p class="service-description">
-                  A distinctive, custom-designed logo created to give your
-                  brand a strong, professional, and memorable visual identity.
+                  طراحی یک لوگوی اختصاصی و متمایز برای ایجاد هویتی حرفه‌ای،
+                  قدرتمند و به‌یادماندنی برای برند شما.
                 </p>
 
                 <div class="service-price">
 
                   <span class="service-price-label">
-                    Starting at
+                    شروع از
                   </span>
 
                   <strong>
-                    $50
+                    ۳,۵۰۰,۰۰۰ تومان
                   </strong>
 
                 </div>
@@ -2027,31 +2064,31 @@
                 <ul class="service-features">
 
                   <li>
-                    Custom logo design
+                    طراحی لوگوی اختصاصی
                   </li>
 
                   <li>
-                    Primary and black &amp; white versions
+                    نسخه اصلی و نسخه سیاه و سفید
                   </li>
 
                   <li>
-                    High-resolution PNG and JPG files
+                    فایل‌های PNG و JPG با وضوح بالا
                   </li>
 
                   <li>
-                    Vector files in AI, PDF, and SVG
+                    فایل‌های وکتور AI، PDF و SVG
                   </li>
 
                   <li>
-                    Color palette
+                    پالت رنگی
                   </li>
 
                   <li>
-                    2 rounds of revisions
+                    ۲ مرحله اصلاحات
                   </li>
 
                   <li>
-                    Digital and print-ready files
+                    فایل‌های مناسب استفاده دیجیتال و چاپ
                   </li>
 
                 </ul>
@@ -2061,15 +2098,15 @@
               <div class="service-footer">
 
                 <span class="service-duration">
-                  3–5 business days
+                  ۳ تا ۵ روز کاری
                 </span>
 
                 <a
                   href="#contact"
                   class="service-link"
-                  aria-label="Start a logo design project"
+                  aria-label="شروع پروژه طراحی لوگو"
                 >
-                  Start a project
+                  شروع پروژه
                   <span aria-hidden="true">↗</span>
                 </a>
 
@@ -2123,27 +2160,27 @@
               <div class="service-content">
 
                 <div class="service-badge">
-                  Most Popular
+                  محبوب‌ترین انتخاب
                 </div>
 
                 <h3 class="service-name">
-                  Brand Starter
+                  شروع هویت برند
                 </h3>
 
                 <p class="service-description">
-                  A cohesive visual foundation for brands that need more than
-                  a logo, covering the core elements from color and typography
-                  to essential brand applications.
+                  یک پایه منسجم برای برندهایی که به چیزی فراتر از لوگو
+                  نیاز دارند، شامل عناصر اصلی هویت از رنگ و تایپوگرافی تا
+                  کاربردهای ضروری برند.
                 </p>
 
                 <div class="service-price">
 
                   <span class="service-price-label">
-                    Starting at
+                    شروع از
                   </span>
 
                   <strong>
-                    $120
+                    ۸,۰۰۰,۰۰۰ تومان
                   </strong>
 
                 </div>
@@ -2151,39 +2188,39 @@
                 <ul class="service-features">
 
                   <li>
-                    Custom primary logo
+                    طراحی لوگوی اصلی اختصاصی
                   </li>
 
                   <li>
-                    Secondary logo variation
+                    نسخه ثانویه لوگو
                   </li>
 
                   <li>
-                    Black &amp; white versions
+                    نسخه‌های سیاه و سفید
                   </li>
 
                   <li>
-                    Color palette and basic color system
+                    پالت رنگی و سیستم پایه رنگ
                   </li>
 
                   <li>
-                    Typography selection
+                    انتخاب تایپوگرافی
                   </li>
 
                   <li>
-                    Simple logo usage guidelines
+                    راهنمای ساده استفاده از لوگو
                   </li>
 
                   <li>
-                    Social profile image and cover
+                    تصویر پروفایل و کاور شبکه اجتماعی
                   </li>
 
                   <li>
-                    AI, PDF, SVG, PNG, and JPG files
+                    فایل‌های AI، PDF، SVG، PNG و JPG
                   </li>
 
                   <li>
-                    2 rounds of revisions
+                    ۲ مرحله اصلاحات
                   </li>
 
                 </ul>
@@ -2193,15 +2230,15 @@
               <div class="service-footer">
 
                 <span class="service-duration">
-                  5–7 business days
+                  ۵ تا ۷ روز کاری
                 </span>
 
                 <a
                   href="#contact"
                   class="service-link"
-                  aria-label="Start a visual identity project"
+                  aria-label="شروع پروژه هویت بصری"
                 >
-                  Start a project
+                  شروع پروژه
                   <span aria-hidden="true">↗</span>
                 </a>
 
@@ -2260,23 +2297,23 @@
               <div class="service-content">
 
                 <h3 class="service-name">
-                  Web Launch
+                  راه‌اندازی وب‌سایت
                 </h3>
 
                 <p class="service-description">
-                  A modern, responsive, and purposeful website designed and
-                  developed to present your brand, services, or portfolio
-                  professionally online.
+                  طراحی و توسعه یک وب‌سایت مدرن، واکنش‌گرا و هدفمند برای
+                  معرفی حرفه‌ای برند، خدمات یا نمونه‌کارهای شما در فضای
+                  دیجیتال.
                 </p>
 
                 <div class="service-price">
 
                   <span class="service-price-label">
-                    Starting at
+                    شروع از
                   </span>
 
                   <strong>
-                    $180
+                    ۱۲,۰۰۰,۰۰۰ تومان
                   </strong>
 
                 </div>
@@ -2284,39 +2321,39 @@
                 <ul class="service-features">
 
                   <li>
-                    Custom responsive website
+                    وب‌سایت اختصاصی و واکنش‌گرا
                   </li>
 
                   <li>
-                    Up to 5 sections
+                    تا ۵ بخش اصلی
                   </li>
 
                   <li>
-                    Mobile, tablet, and desktop support
+                    پشتیبانی از موبایل، تبلت و دسکتاپ
                   </li>
 
                   <li>
-                    Semantic HTML5 and modern CSS
+                    HTML5 معنایی و CSS مدرن
                   </li>
 
                   <li>
-                    Basic JavaScript interactions
+                    تعاملات پایه JavaScript
                   </li>
 
                   <li>
-                    Contact and social media sections
+                    بخش تماس و شبکه‌های اجتماعی
                   </li>
 
                   <li>
-                    Basic SEO setup
+                    تنظیمات پایه SEO
                   </li>
 
                   <li>
-                    Clean and optimized code structure
+                    ساختار کدنویسی تمیز و بهینه
                   </li>
 
                   <li>
-                    2 rounds of revisions
+                    ۲ مرحله اصلاحات
                   </li>
 
                 </ul>
@@ -2326,15 +2363,15 @@
               <div class="service-footer">
 
                 <span class="service-duration">
-                  5–10 business days
+                  ۵ تا ۱۰ روز کاری
                 </span>
 
                 <a
                   href="#contact"
                   class="service-link"
-                  aria-label="Start a web design and development project"
+                  aria-label="شروع پروژه طراحی و توسعه وب"
                 >
-                  Start a project
+                  شروع پروژه
                   <span aria-hidden="true">↗</span>
                 </a>
 
@@ -2358,16 +2395,16 @@
             </span>
 
             <p>
-              Every project is reviewed individually based on its scope, needs,
-              and goals. For custom projects or requirements beyond these
-              packages, feel free to get in touch directly.
+              هر پروژه بر اساس دامنه، نیازها و اهداف آن به‌صورت جداگانه
+              بررسی می‌شود. برای پروژه‌های سفارشی یا نیازهایی خارج از این
+              پکیج‌ها، می‌توانید مستقیماً با من در ارتباط باشید.
             </p>
 
             <a
               href="#contact"
               class="services-contact-link"
             >
-              Let's discuss your project
+              درباره پروژه صحبت کنیم
               <span aria-hidden="true">↗</span>
             </a>
 
@@ -2388,19 +2425,20 @@
         <div class="container">
 
           <div class="section-label">
-            Selected Work
+            نمونه‌کارهای منتخب
           </div>
 
           <h2
             class="section-title"
             id="work-title"
           >
-            Ideas into reality
+            تبدیل ایده به واقعیت
           </h2>
 
           <p class="section-description">
-            A selection of creative work across design, technology, and music,
-            each built with intention and shaped around a clear idea.
+            مجموعه‌ای از آثار من در زمینه طراحی، فناوری و موسیقی؛ هر پروژه
+            با نگاهی هدفمند شکل گرفته و بر پایه یک ایده روشن توسعه یافته
+            است.
           </p>
 
           <div class="work-grid">
@@ -2410,22 +2448,22 @@
             ================================================== -->
 
             <a
-              href="logos.html"
+              href="logos-fa.html"
               class="work-card"
-              aria-label="Explore logo design work"
+              aria-label="مشاهده نمونه‌کارهای طراحی لوگو"
             >
 
               <div class="work-category">
-                Design
+                طراحی
               </div>
 
               <h3>
-                Logo Design
+                طراحی لوگو
               </h3>
 
               <p>
-                Logos that give brands a clear identity, with a focus on
-                simplicity, distinction, and lasting recognition.
+                لوگوهایی برای ساختن هویتی روشن و متمایز برای برندها، با
+                تمرکز بر سادگی، تمایز و ماندگاری در ذهن.
               </p>
 
             </a>
@@ -2435,22 +2473,22 @@
             ================================================== -->
 
             <a
-              href="web.html"
+              href="web-fa.html"
               class="work-card"
-              aria-label="Explore web design and development work"
+              aria-label="مشاهده نمونه‌کارهای طراحی و توسعه وب"
             >
 
               <div class="work-category">
-                Technology
+                فناوری
               </div>
 
               <h3>
-                Web Design &amp; Development
+                طراحی و توسعه وب
               </h3>
 
               <p>
-                Websites designed to look refined, communicate clearly, and
-                provide a smooth experience across devices.
+                وب‌سایت‌هایی با ظاهر حرفه‌ای و تجربه‌ای روان، طراحی‌شده
+                برای انتقال روشن پیام و عملکرد مناسب در دستگاه‌های مختلف.
               </p>
 
             </a>
@@ -2460,22 +2498,22 @@
             ================================================== -->
 
             <a
-              href="music.html"
+              href="music-fa.html"
               class="work-card"
-              aria-label="Explore music and composition work"
+              aria-label="مشاهده نمونه‌کارهای موسیقی و آهنگسازی"
             >
 
               <div class="work-category">
-                Music
+                موسیقی
               </div>
 
               <h3>
-                Music &amp; Composition
+                موسیقی و آهنگسازی
               </h3>
 
               <p>
-                Original pieces and performances created to shape atmosphere,
-                emotion, and memorable moments.
+                قطعات و اجراهای اصیل برای ساختن فضا، انتقال احساس و خلق
+                لحظاتی که در ذهن و خاطره باقی می‌مانند.
               </p>
 
             </a>
@@ -2496,15 +2534,15 @@
         <div class="container">
 
           <div class="section-label">
-            Philosophy
+            فلسفه
           </div>
 
           <h2
             class="quote"
             id="philosophy-title"
           >
-            Make it meaningful.<br />
-            Make it memorable.
+            معنادارش کن.<br />
+            ماندگارش کن.
           </h2>
 
         </div>
@@ -2524,25 +2562,25 @@
           <div class="contact-box">
 
             <div class="section-label">
-              Get In Touch
+              ارتباط با من
             </div>
 
             <h2 id="contact-title">
-              Let's create something meaningful.
+              بیایید چیزی معنادار بسازیم.
             </h2>
 
             <p>
-              Have an idea for a visual identity, a professional website,
-              or a custom piece of music? Tell me what you're working on,
-              and let's turn the idea into something real.
+              ایده‌ای برای هویت بصری، یک وب‌سایت حرفه‌ای یا یک قطعه موسیقی
+              اختصاصی دارید؟ درباره چیزی که در حال ساختنش هستید با من
+              صحبت کنید تا آن ایده را به چیزی واقعی تبدیل کنیم.
             </p>
 
             <a
               href="mailto:mohammadaminzaadeh@gmail.com"
               class="btn btn-primary"
-              aria-label="Send an email to Mohammad Aminzadeh"
+              aria-label="ارسال ایمیل به محمد امین‌زاده"
             >
-              Start a Conversation
+              شروع گفتگو
             </a>
 
           </div>
@@ -2563,7 +2601,7 @@
         <div class="footer-content">
 
           <p>
-            © 2026 Mohammad Aminzadeh. All rights reserved.
+            © ۲۰۲۶ محمد امین‌زاده. تمامی حقوق محفوظ است.
           </p>
 
           <div class="socials">
@@ -2572,7 +2610,7 @@
               href="https://www.instagram.com/mohammadaminzaadeh"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Mohammad Aminzadeh on Instagram"
+              aria-label="محمد امین‌زاده در اینستاگرام"
             >
               Instagram
             </a>
@@ -2581,7 +2619,7 @@
               href="https://www.behance.net/mohammaaminzad1"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Mohammad Aminzadeh on Behance"
+              aria-label="محمد امین‌زاده در Behance"
             >
               Behance
             </a>
@@ -2590,7 +2628,7 @@
               href="https://github.com/MohammadAminzaadeh"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Mohammad Aminzadeh on GitHub"
+              aria-label="محمد امین‌زاده در GitHub"
             >
               GitHub
             </a>
