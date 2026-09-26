@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- =========================================================
+       LOGO CASE STUDY, PERSIAN VERSION
+       MOHAMMAD AMINZADEH
+       Based on work-template.html — same design system, RTL + Persian content.
+       ========================================================= -->
+
+    <title>PAYDAR، طراحی لوگو | محمد امین‌زاده</title>
+
+    <meta
+      name="description"
+      content="پایدار، پروژه طراحی مفهومی لوگو برای یک برند املاک و ساخت‌وساز با رویکردی هندسی و استوار، اثری از محمد امین‌زاده."
+    />
+
+    <link
+      rel="canonical"
+      href="https://mohammadaminzaadeh.github.io/work-paydar-fa.html"
+    />
+
+    <!-- English / Persian versions of this same case study -->
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://mohammadaminzaadeh.github.io/work-paydar.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="fa"
+      href="https://mohammadaminzaadeh.github.io/work-paydar-fa.html"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PAYDAR، طراحی لوگو | محمد امین‌زاده" />
+    <meta
+      property="og:description"
+      content="پایدار، پروژه طراحی مفهومی لوگو برای یک برند املاک و ساخت‌وساز با رویکردی هندسی و استوار، اثری از محمد امین‌زاده."
+    />
+    <meta
+      property="og:image"
+      content="https://mohammadaminzaadeh.github.io/images/paydar-hero.jpg"
+    />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="900" />
+    <meta
+      property="og:url"
+      content="https://mohammadaminzaadeh.github.io/work-paydar-fa.html"
+    />
+    <meta property="og:locale" content="fa_IR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PAYDAR، طراحی لوگو | محمد امین‌زاده" />
+    <meta
+      name="twitter:description"
+      content="پایدار، پروژه طراحی مفهومی لوگو برای یک برند املاک و ساخت‌وساز با رویکردی هندسی و استوار، اثری از محمد امین‌زاده."
+    />
+    <meta
+      name="twitter:image"
+      content="https://mohammadaminzaadeh.github.io/images/paydar-hero.jpg"
+    />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0d0d0d" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "PAYDAR",
+        "inLanguage": "fa",
+        "creator": {
+          "@type": "Person",
+          "name": "Mohammad Aminzadeh",
+          "url": "https://mohammadaminzaadeh.github.io/"
+        },
+        "description": "پایدار، پروژه طراحی مفهومی لوگو برای یک برند املاک و ساخت‌وساز با رویکردی هندسی و استوار، اثری از محمد امین‌زاده.",
+        "image": "https://mohammadaminzaadeh.github.io/images/paydar-hero.jpg",
+        "url": "https://mohammadaminzaadeh.github.io/work-paydar-fa.html"
+      }
+    </script>
+
+    <link
+      rel="preload"
+      as="image"
+      href="images/paydar-hero.jpg"
+      fetchpriority="high"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* =========================================================
+       SMOOTH PAGE TRANSITIONS
+       Turns on native browser cross-page transitions (Chrome/Edge).
+       Firefox/Safari fall back to the JS fade below — either way,
+       no more hard "jump" between pages.
+    ========================================================= */
+
+      @view-transition {
+        navigation: auto;
+      }
+
+      ::view-transition-old(root),
+      ::view-transition-new(root) {
+        animation-duration: 0.35s;
+        animation-timing-function: ease;
+      }
+
+      /* =========================================================
+       BRAND
+    ========================================================= */
+
+      @font-face {
+        font-family: "Vazirmatn";
+        src: url("fonts/Vazirmatn-Regular.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Vazirmatn";
+        src: url("fonts/Vazirmatn-Medium.woff2") format("woff2");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Vazirmatn";
+        src: url("fonts/Vazirmatn-SemiBold.woff2") format("woff2");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Vazirmatn";
+        src: url("fonts/Vazirmatn-Bold.woff2") format("woff2");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Vazirmatn";
+        src: url("fonts/Vazirmatn-ExtraBold.woff2") format("woff2");
+        font-weight: 800;
+        font-style: normal;
+        font-display: swap;
+      }
+      :root {
+        --black: #0d0d0d;
+
+        --gold: #d4af37;
+
+        --white: #f7f7f4;
+
+        --muted: #9a9a95;
+
+        --line: rgba(247, 247, 244, 0.12);
+
+        --max: 1180px;
+
+        --en: "Playfair Display", Georgia, serif;
+
+        --fa: "Vazirmatn", Arial, sans-serif;
+      }
+
+      /* =========================================================
+       RESET
+    ========================================================= */
+
+      * {
+        box-sizing: border-box;
+
+        margin: 0;
+
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+
+        background: var(--black);
+      }
+
+      body {
+        background: var(--black);
+
+        color: var(--white);
+
+        font-family: var(--fa);
+
+        line-height: 1.8;
+
+        overflow-x: hidden;
+
+        opacity: 0;
+
+        animation: page-in 0.5s ease forwards;
+      }
+
+      /* JS fallback fade-out, used only in browsers without the
+         View Transitions API above (Firefox/Safari) */
+      body.fade-out {
+        animation: page-out 0.3s ease forwards;
+      }
+
+      @keyframes page-in {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes page-out {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        body,
+        body.fade-out {
+          animation: none;
+          opacity: 1;
+        }
+      }
+
+      a {
+        color: inherit;
+
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+
+        width: 100%;
+
+        height: auto;
+      }
+
+      .container {
+        width: min(calc(100% - 40px), var(--max));
+
+        margin: 0 auto;
+      }
+
+      /* =========================================================
+       HEADER
+    ========================================================= */
+
+      header {
+        position: sticky;
+
+        top: 0;
+
+        z-index: 100;
+
+        background: rgba(13, 13, 13, 0.86);
+
+        backdrop-filter: blur(12px);
+
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav {
+        height: 76px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+      }
+
+      /* EDIT: Your brand name */
+
+      .brand {
+        font-family: var(--en);
+
+        font-size: 15px;
+
+        letter-spacing: 0.08em;
+
+        color: var(--gold);
+
+        white-space: nowrap;
+      }
+
+      .back {
+        color: var(--muted);
+
+        font-size: 12px;
+
+        transition: 0.3s ease;
+      }
+
+      .back:hover {
+        color: var(--gold);
+      }
+
+      /* =========================================================
+       HERO
+       EDIT:
+       - Project category
+       - Project name
+       - Subtitle
+       - Hero image
+    ========================================================= */
+
+      .hero {
+        padding: 110px 0 90px;
+
+        text-align: center;
+      }
+
+      .eyebrow {
+        color: var(--gold);
+
+        font-size: 11px;
+
+        letter-spacing: 0.2em;
+
+        text-transform: uppercase;
+
+        margin-bottom: 20px;
+      }
+
+      .hero h1 {
+        font-family: var(--en);
+
+        font-size: clamp(60px, 12vw, 145px);
+
+        font-weight: 500;
+
+        line-height: 0.9;
+
+        letter-spacing: 0.02em;
+      }
+
+      .subtitle {
+        margin-top: 25px;
+
+        color: var(--muted);
+
+        font-family: var(--en);
+
+        font-size: 18px;
+      }
+
+      .hero-image {
+        margin-top: 60px;
+
+        overflow: hidden;
+
+        background: #151515;
+      }
+
+      /* EDIT: Hero image */
+
+      .hero-image img {
+        aspect-ratio: 16 / 9;
+
+        object-fit: cover;
+      }
+
+      /* =========================================================
+       SECTIONS
+    ========================================================= */
+
+      section {
+        padding: 90px 0;
+
+        border-top: 1px solid var(--line);
+      }
+
+      .label {
+        color: var(--gold);
+
+        font-size: 10px;
+
+        letter-spacing: 0.2em;
+
+        text-transform: uppercase;
+
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-family: var(--en);
+
+        font-size: clamp(38px, 6vw, 68px);
+
+        font-weight: 500;
+
+        line-height: 1.05;
+
+        margin-bottom: 25px;
+      }
+
+      .text {
+        max-width: 720px;
+
+        color: #d5d5d0;
+
+        font-size: 16px;
+
+        line-height: 2;
+      }
+
+      /* =========================================================
+       OVERVIEW
+       EDIT:
+       - Industry
+       - Service
+       - Style
+       - Type
+       - Description
+    ========================================================= */
+
+      .overview {
+        display: grid;
+
+        grid-template-columns: 1fr 2fr;
+
+        gap: 80px;
+      }
+
+      .facts {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 25px;
+
+        margin-bottom: 30px;
+      }
+
+      .fact {
+        border-top: 1px solid var(--line);
+
+        padding-top: 12px;
+      }
+
+      .fact span {
+        display: block;
+
+        color: var(--muted);
+
+        font-size: 10px;
+
+        letter-spacing: 0.1em;
+
+        text-transform: uppercase;
+      }
+
+      .fact strong {
+        font-size: 14px;
+
+        font-weight: 500;
+      }
+
+      /* =========================================================
+       CONCEPT
+       EDIT:
+       - Title
+       - Description
+    ========================================================= */
+
+      .concept {
+        max-width: 800px;
+      }
+
+      /* =========================================================
+       FINAL LOGO
+       EDIT:
+       - Logo image
+       - Alt text
+    ========================================================= */
+
+      .logo {
+        margin-top: 45px;
+
+        min-height: 500px;
+
+        background: #f2f1ec;
+
+        display: grid;
+
+        place-items: center;
+
+        padding: 50px;
+      }
+
+      .logo img {
+        width: auto;
+
+        height: auto;
+
+        max-width: 90%;
+
+        max-height: 400px;
+
+        object-fit: contain;
+      }
+
+      /* =========================================================
+       BLACK & WHITE
+       EDIT:
+       - Black & White image
+    ========================================================= */
+
+      .bw {
+        margin-top: 45px;
+
+        min-height: 500px;
+
+        background: #111;
+
+        display: grid;
+
+        place-items: center;
+
+        padding: 50px;
+      }
+
+      .bw img {
+        width: auto;
+
+        height: auto;
+
+        max-width: 90%;
+
+        max-height: 400px;
+
+        object-fit: contain;
+      }
+
+      /* =========================================================
+       MOCKUPS
+       EDIT:
+       - Mockup image
+       - Alt text
+    ========================================================= */
+
+      .mockup {
+        margin-top: 45px;
+
+        overflow: hidden;
+      }
+
+      .mockup img {
+        width: 100%;
+      }
+
+      /* =========================================================
+       PROJECT NAVIGATION
+       EDIT:
+       - Previous / Back link
+       - Next project
+    ========================================================= */
+
+      .project-nav {
+        padding: 55px 0 90px;
+
+        border-top: 1px solid var(--line);
+      }
+
+      .nav-projects {
+        display: flex;
+
+        justify-content: space-between;
+
+        gap: 30px;
+      }
+
+      .project-link {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 5px;
+      }
+
+      .project-link span {
+        color: var(--muted);
+
+        font-size: 10px;
+
+        letter-spacing: 0.15em;
+
+        text-transform: uppercase;
+      }
+
+      .project-link strong {
+        font-family: var(--fa);
+
+        font-size: 25px;
+
+        font-weight: 500;
+
+        transition: 0.3s ease;
+      }
+
+      .project-link:hover strong {
+        color: var(--gold);
+      }
+
+      /* =========================================================
+       FOOTER
+    ========================================================= */
+
+      footer {
+        border-top: 1px solid var(--line);
+
+        padding: 25px 0;
+
+        color: var(--muted);
+
+        font-size: 10px;
+      }
+
+      .footer-inner {
+        display: flex;
+
+        justify-content: space-between;
+      }
+
+      /* =========================================================
+       MOBILE
+    ========================================================= */
+
+      @media (max-width: 750px) {
+        .container {
+          width: min(calc(100% - 28px), var(--max));
+        }
+
+        .hero {
+          padding: 80px 0 60px;
+        }
+
+        section {
+          padding: 70px 0;
+        }
+
+        .overview {
+          grid-template-columns: 1fr;
+
+          gap: 40px;
+        }
+
+        .logo,
+        .bw {
+          min-height: 320px;
+        }
+
+        .nav-projects,
+        .footer-inner {
+          flex-direction: column;
+        }
+      }
+
+      /* =========================================================
+       RTL / PERSIAN OVERRIDES
+       Persian text must not get letter-spacing or uppercase
+       (it breaks letter joining), and headings/subtitle must use
+       the Persian typeface instead of the Latin serif.
+    ========================================================= */
+
+      .hero h1 {
+        font-family: var(--en);
+        direction: ltr;
+      }
+
+      .subtitle {
+        font-family: var(--fa);
+        letter-spacing: 0;
+      }
+
+      h2 {
+        font-family: var(--fa);
+        letter-spacing: 0;
+      }
+
+      .eyebrow,
+      .label {
+        letter-spacing: 0.04em;
+        text-transform: none;
+      }
+
+      .fact span {
+        letter-spacing: 0;
+        text-transform: none;
+      }
+
+      .project-link span {
+        letter-spacing: 0.04em;
+        text-transform: none;
+      }
+
+      .project-link strong {
+        direction: ltr;
+        unicode-bidi: isolate;
+      }
+
+      .back {
+        direction: rtl;
+      }
+
+      .text {
+        line-height: 2.1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a class="brand" href="index-fa.html"> MOHAMMAD AMINZADEH </a>
+        <a class="back" href="index-fa.html#work"> → کارهای منتخب </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" style="border-top: 0">
+        <div class="container">
+          <div class="eyebrow">طراحی لوگو</div>
+
+          <h1>PAYDAR</h1>
+
+          <p class="subtitle">ساده · مدرن · هندسی</p>
+
+          <div class="hero-image">
+            <img
+              src="images/paydar-hero.jpg"
+              alt="طراحی لوگوی PAYDAR"
+              width="1600"
+              height="900"
+              fetchpriority="high"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container overview">
+          <div>
+            <div class="label">۰۱ — بررسی پروژه</div>
+            <h2>نمای کلی<br />پروژه</h2>
+          </div>
+
+          <div>
+            <div class="facts">
+              <div class="fact">
+                <span> صنعت </span>
+                <strong> املاک و مستغلات / ساخت‌وساز </strong>
+              </div>
+
+              <div class="fact">
+                <span> خدمت </span>
+                <strong> طراحی لوگو </strong>
+              </div>
+
+              <div class="fact">
+                <span> سبک </span>
+                <strong> مینیمال / هندسی </strong>
+              </div>
+
+              <div class="fact">
+                <span> نوع </span>
+                <strong> پروژه مفهومی </strong>
+              </div>
+            </div>
+
+            <p class="text">
+              پایدار یک پروژه طراحی مفهومی لوگو است که برای حوزه‌ی املاک و
+              ساخت‌وساز توسعه داده شده. این هویت بصری، ثبات، ساختار و تداوم را
+              از طریق رویکردی هندسی و شفاف بازتاب می‌دهد و شخصیت معماری را با
+              حسی از رشد طبیعی درهم می‌آمیزد.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container concept">
+          <div class="label">۰۲ — مفهوم</div>
+
+          <h2>ساختاری<br />که پایدار می‌ماند.</h2>
+
+          <p class="text">
+            مفهوم این پروژه، فرم‌های هندسی الهام‌گرفته از معماری، ساخت‌وساز و
+            رشد طبیعی را در کنار هم قرار می‌دهد. رابطه‌ی میان ساختار معماری و
+            درخت، بیانگر ثبات، رشد و تداوم است و هویتی بصری با شخصیتی روشن و
+            استوار می‌سازد.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="label">۰۳ — لوگوی نهایی</div>
+
+          <h2>نشان نهایی</h2>
+
+          <div class="logo">
+            <img
+              src="images/paydar-logo-primary.jpg"
+              alt="نشان اصلی و نهایی PAYDAR روی زمینه روشن"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="label">۰۴ — سیاه و سفید</div>
+
+          <h2>یک نشان.<br />زمینه‌های متفاوت.</h2>
+
+          <div class="bw">
+            <img
+              src="images/paydar-logo-white.jpg"
+              alt="نسخه سیاه و سفید لوگوی PAYDAR برای زمینه‌های تیره"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="label">۰۵ — کاربردها</div>
+
+          <h2>در دل کاربرد</h2>
+
+          <p class="text">
+            مجموعه‌ای از نمونه‌کاربردها که نشان می‌دهد هویت پایدار چگونه
+            می‌تواند به کاربردهای عملی برند تبدیل شود، بی‌آنکه شخصیت هندسی و
+            روشن خود را از دست بدهد.
+          </p>
+
+          <div class="mockup">
+            <img
+              src="images/paydar-mockups.jpg"
+              alt="نمونه‌کاربردهای واقعی لوگوی PAYDAR"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="project-nav">
+      <div class="container nav-projects">
+        <a class="project-link" href="index-fa.html#work">
+          <span> بازگشت </span>
+          <strong> کارهای منتخب </strong>
+        </a>
+
+        <a class="project-link" href="work-surin-fa.html">
+          <span> پروژه بعدی </span>
+          <strong> SURIN ← </strong>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container footer-inner">
+        <span> © ۲۰۲۶ محمد امین‌زاده </span>
+        <span> طراحی · موسیقی · فناوری </span>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        if ("startViewTransition" in document) return;
+
+        document.querySelectorAll("a[href]").forEach(function (link) {
+          const url = link.getAttribute("href");
+          const isSamePage =
+            !url ||
+            url.startsWith("#") ||
+            url.startsWith("http") ||
+            url.startsWith("mailto:") ||
+            url.startsWith("tel:") ||
+            link.target === "_blank";
+
+          if (isSamePage) return;
+
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.body.classList.add("fade-out");
+            setTimeout(function () {
+              window.location.href = url;
+            }, 280);
+          });
+        });
+
+        window.addEventListener("pageshow", function (event) {
+          if (event.persisted) {
+            document.body.classList.remove("fade-out");
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
